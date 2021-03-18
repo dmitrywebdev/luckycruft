@@ -1,0 +1,113 @@
+.answers {
+    width: 255px;
+    padding: 40px 27px;
+    background-color: $light-blue;
+    box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+    &__title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: $main-black;
+        border-bottom: 1px solid #E6E6EA;
+        text-align: center;
+        padding-bottom: 16px;
+        margin-bottom: 22px;
+    }
+
+
+    &__card {
+        margin-bottom: 26px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__flex {
+        display: flex;
+    }
+
+    &__pic {
+        margin-right: 2.9px;
+        align-items: flex-start;
+    }
+
+    &__prob {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: $main-black;
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        font-size: 12px;
+        line-height: 16px;
+        color: $main-black;
+    }
+
+    &__time {
+        font-size: 12px;
+        line-height: 16px;
+        color: $light-gray-text;
+    }
+}
+
+.socials {
+    width: 255px;
+    padding: 35px 27px;
+    background-color: $light-blue;
+    box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+    border-radius: 10px;
+
+    &__title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: $main-black;
+        border-bottom: 1px solid #E6E6EA;
+        text-align: center;
+        padding-bottom: 16px;
+        margin-bottom: 30px;
+    }
+
+    &__vk  {
+        display: block;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: $white;
+        text-decoration: none;
+        padding: 10px 12px 10px 60px;
+        border-radius: 7px;
+        background: #2787F5 url(../img/svg/vk-ico.svg) no-repeat 16px center;
+        margin-bottom: 12px;
+
+        span {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    &__discord  {
+        display: block;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: $white;
+        text-decoration: none;
+        padding: 10px 12px 10px 60px;
+        border-radius: 7px;
+        background: #7289DA url(../img/svg/discord-ico.svg) no-repeat 16px center;
+
+        span {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}

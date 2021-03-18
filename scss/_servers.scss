@@ -1,0 +1,21 @@
+.servers {
+    &__general {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: $main-black;
+    }
+
+    &__record {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: $main-black;
+
+    } 
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
