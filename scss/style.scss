@@ -1,4 +1,8 @@
-* {
-    box-sizing: border-box;
-}
-
+//Переменные цветов
+@import "colors";
+//Общие стили
+@import "common";
+//Header стили
+@import "header";
+//Intro стили
+@import "intro";

@@ -1,0 +1,56 @@
+.intro {
+
+    margin-bottom: 54px;
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__info {
+        flex: 0 1 47%;
+        padding-top: 40px;
+        margin-right: 41px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 49px;
+        margin-bottom: 20px;
+        color: $light-gray;
+    }
+
+    &__text {
+        max-width: 488px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 55px;
+    }
+
+    &__start {
+        margin-right: 20px;
+    }
+
+    &__about {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: $main-black;
+        text-decoration: none;
+        padding: 15px 18px;
+        border: 1px solid $main-black;
+        border-radius: 10px;
+        transition: border-color .3s ease;
+
+        &:hover {
+            border-color: $main-yellow;
+        }
+    }
+
+    &__img {
+        flex: 0 1 53%;
+        margin-right: -30px;
+    }
+}
