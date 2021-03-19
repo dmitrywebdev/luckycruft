@@ -37,6 +37,11 @@
             line-height: 22px;
             color: $main-black;
             text-decoration: none;
+            transition: color .3s ease;
+
+            &:hover {
+                color: $white;
+            }
         }
     }
 
@@ -53,6 +58,13 @@
         text-decoration: none;
         position: relative;
         background: url(../img/svg/arrow_up.svg) no-repeat right center;
+
+        transition: all .3s ease;
+
+            &:hover {
+                color: $white;
+                background: url(../img/svg/arrow_up-hover.svg) no-repeat right center;
+            }
     }
 
     &__links {

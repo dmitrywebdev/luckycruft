@@ -272,6 +272,8 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
 }
 
 .servers__card:hover .servers__card-pic {
@@ -471,6 +473,10 @@ body {
   margin-bottom: 50px;
 }
 
+.answers__link {
+  text-decoration: none;
+}
+
 .answers__title {
   font-weight: bold;
   font-size: 16px;
@@ -509,6 +515,12 @@ body {
   line-height: 19px;
   color: #2A2A34;
   margin-bottom: 10px;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.answers__prob:hover {
+  color: #F7D40C;
 }
 
 .answers__name {
@@ -554,6 +566,12 @@ body {
   border-radius: 7px;
   background: #2787F5 url(../img/svg/vk-ico.svg) no-repeat 16px center;
   margin-bottom: 12px;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+.socials__vk:hover {
+  background-color: #52a0f8;
 }
 
 .socials__vk span {
@@ -572,6 +590,12 @@ body {
   padding: 10px 12px 10px 60px;
   border-radius: 7px;
   background: #7289DA url(../img/svg/discord-ico.svg) no-repeat 16px center;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+.socials__discord:hover {
+  background-color: #8899da;
 }
 
 .socials__discord span {
@@ -626,6 +650,12 @@ body {
   line-height: 22px;
   color: #2A2A34;
   text-decoration: none;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.footer__item-link:hover {
+  color: #FFFFFF;
 }
 
 .footer__up {
@@ -641,6 +671,13 @@ body {
   text-decoration: none;
   position: relative;
   background: url(../img/svg/arrow_up.svg) no-repeat right center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.footer__link:hover {
+  color: #FFFFFF;
+  background: url(../img/svg/arrow_up-hover.svg) no-repeat right center;
 }
 
 .footer__links-lucky {
