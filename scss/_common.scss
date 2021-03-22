@@ -2,6 +2,10 @@
 
 html {
     box-sizing: border-box;
+
+    a {
+        outline: none !important; 
+    }
 }
 
 *, *::before, *::after {
@@ -12,6 +16,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
 }
+
+
 
 .container {
     max-width: 1110px;
