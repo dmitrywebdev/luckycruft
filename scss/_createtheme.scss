@@ -1,0 +1,95 @@
+.create {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: $main-black;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        width: 539px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: $light-gray-text;
+        margin-bottom: 30px;
+    }
+
+    &__form {
+        width: 825px;
+        padding: 30px;
+        background: $white;
+        box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+        border-radius: 10px;
+
+        &-title {
+            margin-bottom: 20px;
+
+            &-label  {
+                display: block;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                color: $main-black;
+                margin-bottom: 5px;
+            }
+
+            &-text {
+                width: 378px;
+                padding: 9px 0px 9px 10px;
+                background: $light-blue;
+                border: 1px solid $divide-grey;
+                border-radius: 10px;
+
+                &::placeholder {
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: $light-gray-text;
+                }
+            }
+        }
+
+        &-msg {
+            margin-bottom: 30px;
+
+            &-label {
+                display: block;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                color: $main-black;
+                margin-bottom: 6px;
+            }
+
+            &-text {
+                width: 100%;
+                padding: 9px 0px 69px 10px;
+                background: $light-blue;
+                border: 1px solid $divide-grey;
+                border-radius: 10px;
+
+                &::placeholder {
+                    font-weight: normal;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: $light-gray-text;
+                }
+            }
+        }
+
+        &-btn {
+            font-weight: 600;
+            border: 0;
+        }
+    }
+
+}

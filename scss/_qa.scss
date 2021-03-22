@@ -1,0 +1,120 @@
+.ques-ans {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__title-text {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: $main-black;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle-text {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: $light-gray-text;
+    }
+
+    &__cards {
+        border-bottom: 1px solid $divide-grey;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+
+        &__wrapper {
+            margin-bottom: 100px;
+        }
+    }
+
+    &__card {
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px 20px 29px 76px;
+        background: $white;
+        box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+        border-radius: 10px;
+        position: relative;
+        margin-bottom: 20px;
+
+        &-before {
+            position: absolute;
+            top: 36px;
+            left: 26px;
+            width: 22.5px;
+            height: 22.5px;
+        }
+
+        &-info {
+            margin: 0 auto 0 0;
+        }
+
+        &-link {
+            text-decoration: none;
+        }
+
+        &-title {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            color: $main-black;
+        }
+
+        &-author {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: $light-gray-text;
+        }
+
+        &-users {
+            margin-right: 135px;
+
+            &-avatars {
+                margin-left: -12px;
+            }
+
+            &-stat {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+                color: $white;
+                padding: 10px 5px;
+                background: $main-black;
+                border-radius: 50%;
+            }
+        }
+
+
+        &-last {
+            text-align: right;
+
+            &-msg {
+                display: block;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                color: $light-gray-text;
+                margin-bottom: 6px;
+            }
+
+            &-ago {
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                color: $main-black;
+            }
+        }
+    }
+
+}
