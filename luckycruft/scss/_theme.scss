@@ -1,0 +1,325 @@
+.theme {
+
+    &__content-wrapper {
+        border-bottom: 1px solid $divide-grey;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__discussion {
+        width: 825px;
+        display: inline-block;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: $light-gray-text;
+        border-bottom: 1px solid $divide-grey;
+        padding-bottom: 12px;
+        margin-bottom: 10px;
+        position: relative;
+
+        &::after {
+            display: block;
+            content: '';
+            background: url(../img/svg/pin-ico.svg) no-repeat right center;
+            position: absolute;
+            top: -10%;
+            right: 73%;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__title {
+
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 22px;
+        }
+
+        &-text {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 27px;
+            color: $main-black;
+            margin-bottom: 6px;
+        }
+
+        &-author {
+            display: inline-block;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: $main-black;
+            margin-right: 10px;
+        }
+
+        &-time {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: $light-gray-text;
+        }
+    }
+
+    &__button-send {
+        border: none;
+        font-weight: 600;
+    }
+    
+    &__post {
+        width: 825px;
+        background: $white;
+        box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+        border-radius: 10px;
+        margin-bottom: 50px;
+
+        &-title {
+            padding: 30px 30px 0 30px;
+            
+            
+            
+            &-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid $divide-grey;
+                padding-bottom: 30px;
+            }
+
+            &-user {
+                display: flex;
+                align-items: center;
+
+                &-avatar {
+                    margin-right: 10px;
+                }
+
+                &-name {
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: $main-black;
+                }
+
+                &-role {
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+
+            &-info {
+                display: flex;
+
+                &-msg {
+                   
+                    text-align: right;
+                    margin-right: 30px;
+
+                    &-number {
+                        display: block;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: $light-gray-text;
+                    }
+
+                    &-code {
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: $light-gray-text; 
+                    }
+                }
+
+                &-published {
+                    text-align: right;
+
+                    &-text {
+                        display: block;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: $light-gray-text;
+                    }
+
+                    &-date {
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: $light-gray-text;
+                    }
+                }
+            }
+        }
+
+        &-content {
+            padding: 30px 95px 58px 88px;
+
+            &-text {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                color: $main-black;
+            }
+        }
+
+        &-application {
+            padding: 20px 0px 20px 20px;
+            background: $light-blue;
+            border: 1px solid $divide-grey;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            &-title {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                color: $main-black;
+                margin-bottom: 10px;
+            }
+
+            &-item {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                color: $main-black;
+                margin-bottom: 6px;
+                
+                &:last-child {
+                    margin: 0;
+                }
+            }
+          
+        }
+
+        &-warning {
+            padding: 20px;
+            background: $input-error;
+            border: 1px solid $red-warning;
+            border-radius: 10px;
+            margin-bottom: 30px;
+
+            &-title {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                color: $main-black;
+                margin-bottom: 10px;
+            }
+
+            &-text {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                color: $main-black;
+            }
+        }
+
+        &-ps {
+            width: 452px;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            color: $main-black;
+            margin-bottom: 50px;
+        }
+
+        &-change {
+            padding: 20px 0px 20px 20px;
+            background: $light-blue;
+            border: 1px solid $divide-grey;
+            border-radius: 10px;
+            margin-bottom: 50px;
+
+            &-title {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                color: $main-black;
+                margin-bottom: 10px;
+            }
+
+            &-item {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                color: $main-black;
+                margin-bottom: 6px;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    &__form {
+        margin-bottom: 100px;
+
+        &-wrapper {
+            position: relative;
+        }
+
+        &-img {
+            background: $main-yellow;
+            width: 825px;
+            padding: 20px 0px 20px 30px;
+            border-radius: 10px;
+            margin-bottom: 234px;
+            
+        }
+
+        &-group {
+            
+            position: absolute;
+            top: 40px;
+            left: 95px;
+
+        }
+    
+
+        &-textarea {
+            display: block;
+            width: 480px;
+            background: $white;
+            box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+            border-radius: 10px;
+            padding: 20px 0px 58px 20px;
+            border: none;
+            margin-bottom: 30px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+
+            &::placeholder {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                color: $light-gray-text;
+            }
+        }
+
+        &-send {
+            border: none;
+        }
+    }
+}
+
+.role-admin {
+    color: $red-warning;
+}
+
+.role-player {
+    color: $light-gray-text;
+}

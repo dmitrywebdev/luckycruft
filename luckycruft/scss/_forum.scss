@@ -1,0 +1,256 @@
+.forum {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__chat {
+        width: 825px;
+        box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+        border-radius: 10px;
+        margin-bottom: 50px;
+
+
+        &-top {
+            width: 825px;
+            padding: 20px 0 20px 30px;
+            border-bottom: 1px solid $divide-grey;
+        }
+
+        &-title {
+            display: block;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: $main-black;
+        }
+
+        &-field {
+            padding: 25px 30px 17px 30px;
+        }
+
+        &-massage {
+            display: flex;
+            align-items: start;
+            margin-bottom: 23px;
+
+            &-you {
+                display: flex;
+                justify-content: flex-end;
+                align-items: start;
+            }
+
+            &-avatar {
+                margin-right: 21px;
+            }
+
+            &-info {
+                width: 430px;
+            }
+
+            &-name {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                color: $main-black;
+                margin-bottom: 1px;
+            }
+
+            &-text {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                color: $main-black;
+                margin-bottom: 10px;
+            }
+
+            &-time {
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                color: $light-gray-text;
+            }
+        }
+
+        &-form {
+            padding: 20px 30px;
+            border-top: 1px solid $divide-grey;
+            border-radius: 6.70044px;
+            position: relative;
+        }
+
+        &-textfield {
+            width: 615px;
+            padding: 10px 0 10px 54px;
+            background: $light-blue;
+            border: 1px solid $divide-grey;
+            border-radius: 10px;
+            position: relative;
+            margin-right: 20px;
+        }
+
+        &-smile-btn {
+            position: absolute; 
+            top: 20px;
+            left: 31px;
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-right: 1px solid $divide-grey;
+            background: transparent;
+
+            &::before {
+                content: "\f118";
+                font-family: FontAwesome;
+                font-size: 15px;
+                color: $light-gray-text;
+            }
+        }
+
+        &-send {
+            padding: 9px 22.5px;
+            border: none;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: $main-black;
+            background-color: $main-yellow;
+            border-radius: 10px;
+            box-shadow: 0px 2px 0px #DCC438;
+            transition: background-color .3s ease;
+
+            &:hover {
+                background-color: $yellow-hover;
+            }
+
+            &:disabled {
+                background-color: $divide-grey;
+                color: $light-gray-text;
+                box-shadow: 0px 2px 0px $light-gray-text;
+            }
+
+            
+        }
+
+    }
+
+    &__section {
+
+        &-game {
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+
+        &-link {
+            text-decoration: none;
+        }
+
+        &-title {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 27px;
+            color: $light-gray;
+            margin-bottom: 30px;
+        }
+
+        &-card {
+            padding: 30px 64px 32px 76px;
+            display: flex;
+            justify-content: space-between;
+            background: $white;
+            box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: relative;
+
+            &-before {
+                position: absolute;
+                top: 36px;
+                left: 26px;
+                width: 22.5px;
+                height: 22.5px;
+            }
+
+            &-title {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                color: $main-black;
+            }
+
+            &-desc {
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                color: $light-gray-text;
+            }
+
+            &-column-theme {
+
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                &-count {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: $main-black;
+                }
+
+                &-text {
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: $light-gray-text;
+                }
+            }
+
+            &-column-massage {
+
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                &-count {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: $main-black;
+                }
+
+                &-text {
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: $light-gray-text;
+                }
+            }
+
+            &-column-user {
+
+                display: flex;
+
+                &-avatar {
+                    margin-right: 10px;
+                }
+
+                &-title {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: $main-black
+                }
+
+                &-by {
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: $light-gray-text;
+                }
+                
+            }
+        }
+    }
+}
