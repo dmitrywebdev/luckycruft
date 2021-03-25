@@ -1,0 +1,138 @@
+.rules {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    
+    
+    &__title {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: $main-black;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        display: block;
+        max-width: 539px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: $light-gray-text;
+        margin-bottom: 33px;
+    }
+
+    &__accordion {
+
+        margin-bottom: 93px;
+
+        &-block {
+            margin-bottom: 36px;
+        }
+
+        &-title {
+            cursor: pointer;
+            width: 825px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            padding-bottom: 13px;
+            border-bottom: 1px solid $divide-grey;
+            margin-bottom: 23px;
+            position: relative;
+            
+
+            &::before, &::after {
+                content: '';
+                width: 14px;
+                height: 2px;
+                background-color: $main-black;
+                position: absolute;
+                top: 15px;
+                transition: all .3s ease;
+            }
+
+            &::before {
+                transform: rotate(-40deg);
+                right: 10px;
+            }
+
+            &::after {
+                transform: rotate(40deg);
+                right: 20px;
+            }
+            
+        }
+
+        &-subtext {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: $main-black;
+            margin-bottom: 10px;
+
+            &:first-child {
+                margin-top: 10px;
+            }
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        &-content {
+            display: none;
+            width: 825px;
+            padding: 20px 0px 20px 48px;
+            background-color: $light-blue;
+            border: 1px solid $divide-grey;
+            border-radius: 10px;
+            margin-bottom: 33px;
+        }
+
+
+        &-list {
+            list-style-type: decimal;
+        }
+
+        &-item {
+            width: 682px;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: $main-black;
+            margin-bottom: 10px;
+
+            &-subtext {
+                display: block;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                color: $light-gray-text;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            &-warning {
+                display: block;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                color: $red-warning;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.accordion-active::before {
+    transform: rotate(40deg);
+}
+
+.accordion-active::after {
+    transform: rotate(-40deg);
+}

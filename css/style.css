@@ -252,6 +252,10 @@ body {
   left: -106px;
 }
 
+.subnav-active {
+  color: #F7D40C;
+}
+
 .intro {
   margin-bottom: 54px;
 }
@@ -2033,4 +2037,142 @@ body {
 
 .role-player {
   color: #ACACAC;
+}
+
+.rules__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rules__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #2A2A34;
+  margin-bottom: 10px;
+}
+
+.rules__subtitle {
+  display: block;
+  max-width: 539px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ACACAC;
+  margin-bottom: 33px;
+}
+
+.rules__accordion {
+  margin-bottom: 93px;
+}
+
+.rules__accordion-block {
+  margin-bottom: 36px;
+}
+
+.rules__accordion-title {
+  cursor: pointer;
+  width: 825px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #E6E6EA;
+  margin-bottom: 23px;
+  position: relative;
+}
+
+.rules__accordion-title::before, .rules__accordion-title::after {
+  content: '';
+  width: 14px;
+  height: 2px;
+  background-color: #2A2A34;
+  position: absolute;
+  top: 15px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.rules__accordion-title::before {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  right: 10px;
+}
+
+.rules__accordion-title::after {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  right: 20px;
+}
+
+.rules__accordion-subtext {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2A2A34;
+  margin-bottom: 10px;
+}
+
+.rules__accordion-subtext:first-child {
+  margin-top: 10px;
+}
+
+.rules__accordion-subtext:last-child {
+  margin: 0;
+}
+
+.rules__accordion-content {
+  display: none;
+  width: 825px;
+  padding: 20px 0px 20px 48px;
+  background-color: #F2FAFF;
+  border: 1px solid #E6E6EA;
+  border-radius: 10px;
+  margin-bottom: 33px;
+}
+
+.rules__accordion-list {
+  list-style-type: decimal;
+}
+
+.rules__accordion-item {
+  width: 682px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2A2A34;
+  margin-bottom: 10px;
+}
+
+.rules__accordion-item-subtext {
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ACACAC;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.rules__accordion-item-warning {
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FF5A5A;
+  margin-top: 10px;
+}
+
+.accordion-active::before {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.accordion-active::after {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
 }
