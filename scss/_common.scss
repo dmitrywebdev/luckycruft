@@ -113,3 +113,14 @@ body {
 
     
 }
+
+.btn-inactive {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: $light-gray-text;
+    background-color: $divide-grey;
+    box-shadow: 0px 2px 0px #ACACAC;
+    border-radius: 10px;
+    text-decoration: none;
+}
