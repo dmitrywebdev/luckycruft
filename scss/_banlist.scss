@@ -1,0 +1,178 @@
+.banlist {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__page-title {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: $main-black;
+        margin-bottom: 10px;
+    }
+
+    &__page-subtitle {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: $light-gray-text;
+        margin-bottom: 20px;
+    }
+
+    &__sort-drop {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: $light-gray-text;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        position: relative;
+
+        &::after {
+            content: "\f107";
+            font-family: FontAwesome;
+            font-size: 15px;
+            columns: $light-gray-text;
+            position: absolute;
+            top: 2%;
+            right: 5%;
+        }
+    }
+
+    &__sort-text {
+
+        li:hover {
+            cursor: pointer;
+        }
+
+        li:hover .banlist__sort-list {
+            display: block;
+        }
+    }
+
+    &__sort-list {
+        display: none;
+        width: 200px;
+        position: absolute;
+        padding: 17px 0px 5px 44px;
+        background: $white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+        top: 100%;
+        right: 0;
+    }
+
+    &__sort-link {
+        display: inline-block;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: $main-black;
+        text-decoration: none;
+        margin-bottom: 12px;
+        transition: color .3s ease;
+        position: relative;
+
+        &:hover {
+            color: $main-yellow;
+        }
+
+    }
+
+
+    &__content {
+
+        &-wrapper {
+            margin-bottom: 90px;
+        }
+
+        &-header {
+
+            display: flex;
+            justify-content: space-between;
+            padding: 35px 30px;
+            background: $main-yellow;
+            border-radius: 10px;
+
+            &-item {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                color: $main-black;
+            }
+        }
+    }
+
+    &__cards {
+        margin-bottom: 50px;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-bottom: 1px solid $divide-grey;
+        padding: 20px 32px 20px 30px;
+    }
+
+    &__user {
+        display: flex;
+        flex-basis: 151px;
+        align-items: center;
+        margin: 0 auto 0 0;
+
+        &-adm {
+            display: flex;
+            flex-basis: 151px;
+            align-items: center;
+        }
+
+        &-avatar {
+            margin-right: 10px;
+        }
+
+        &-nickname {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: $blue-link;
+        }
+    }
+
+
+    &__reason-num {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: $blue-link;
+        margin-left: 45px;
+    }
+
+    &__ban-date {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color:$main-black;
+        margin-left: 118px;
+    }
+
+    &__unban-date {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color:$main-black;
+        margin-left: 68px;
+    }
+}
+
+.active-sort-link::before {
+    content: '';
+    background: url(../img/svg/accept-green.svg) no-repeat left center;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 4px;
+    left: -20px;
+}

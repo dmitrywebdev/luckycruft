@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Вопрос-ответ</title>
+    <title>Все новости</title>
 </head>
 
 <body>
@@ -24,10 +24,10 @@
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li class="header__nav-item">
-                            <a href="forum.html" target="_blank" class="header__nav-link header-active">Форум</a>
+                            <a href="forum.html" target="_blank" class="header__nav-link">Форум</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="#!" class="header__nav-link">Информация</a>
+                            <a href="#!" class="header__nav-link header-active">Информация</a>
                             <ul class="header__subnav-list">
                                 <li class="header__subnav-item">
                                     <a href="rules.html" target="_blank" class="header__subnav-link">
@@ -35,7 +35,7 @@
                                     </a>
                                 </li>
                                 <li class="header__subnav-item">
-                                    <a href="banlist.html" target="_blank" class="header__subnav-link">
+                                    <a href="#!" class="header__subnav-link subnav-active">
                                         Банлист
                                     </a>
                                 </li>
@@ -102,26 +102,19 @@
 
     <div class="page__navigation">
         <div class="container">
-            <h1 class="page__navigation-title">Главная — Форум — Вопрос-ответ</h1>
+            <h1 class="page__navigation-title">Главная — Информация — Банлист</h1>
         </div>
         <!-- /.container -->
     </div>
     <!-- /.page__navigation -->
 
-    <div class="ques-ans">
+    <div class="banlist">
         <div class="container">
-            <div class="ques-ans__wrapper">
-                <div class="ques-ans__cards__wrapper">
-                    <div class="ques-ans__title-wrapper">
-                        <div class="ques-ans__title">
-                            <h1 class="ques-ans__title-text">Все новости</h1>
-                            <p class="ques-ans__subtitle-text">Тут вы можете задать вопрос администрации проекта</p>
-                        </div>
-                        <div class="ques-ans__btn">
-                            <a href="createtheme.html" target="_blank" class="ques-ans__create btn-yellow">Создать
-                                тему</a>
-                        </div>
-                    </div>
+            <div class="banlist__wrapper">
+                <div class="banlist__content-wrapper">
+                    <h1 class="banlist__page-title">Банлист</h1>
+                    <p class="banlist__page-subtitle">Здесь представлен перечень всех заблокированных пользователей
+                        на нашем проекте</p>
                     <form action="#" class="news__form">
                         <input type="search" placeholder="Ищете что-то особенное?" class="news__search">
                         <button class="news__search-btn"></button>
@@ -129,225 +122,288 @@
                     </form>
                     <!-- /.news__form -->
 
-                    <div class="ques-ans__cards">
-                        <a href="theme.html" target="_blank" class="ques-ans__card-link">
-                            <div class="ques-ans__card">
-                                <img src="img/svg/pin-ico.svg" alt="msg" class="ques-ans__card-before">
-                                <div class="ques-ans__card-info">
-                                    <h2 class="ques-ans__card-title">Платная смена ника</h2>
-                                    <span class="ques-ans__card-author">SergOBW</span>
-                                </div>
+                    <div class="news__info-wrapper">
+                        <div class="news__stat">
+                            <h3 class="news__stat-title">По вашему запросу найдено: <span>340</span></h3>
+                        </div>
+                        <!-- /.news__stat -->
+                        <div class="banlist__sort">
+                            <ul class="banlist__sort-text">
+                                <li class="banlist__sort-drop">Поиск по:
+                                    <ul class="banlist__sort-list">
+                                        <li class="banlist__sort-item">
+                                            <a href="#!" class="banlist__sort-link active-sort-link">нику</a>
+                                            <!-- /.banlist__sort-link -->
+                                        </li>
+                                        <!-- /.banlist__sort-item -->
+                                        <li class="banlist__sort-item">
+                                            <a href="#!" class="banlist__sort-link">причине</a>
+                                            <!-- /.banlist__sort-link -->
+                                        </li>
+                                        <!-- /.news__sort-item -->
+                                        <li class="banlist__sort-item">
+                                            <a href="#!" class="banlist__sort-link"> дате бана</a>
+                                            <!-- /.banlist__sort-link -->
+                                        </li>
+                                        <!-- /.banlist__sort-item -->
+                                    </ul>
+                                    <!-- /.banlist__sort-list -->
+                            </ul>
+                            </li>
 
-                                <div class="ques-ans__card-users">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <span class="ques-ans__card-users-avatars ques-ans__card-users-stat">+120</span>
-                                </div>
-
-                                <div class="ques-ans__card-last">
-                                    <span class="ques-ans__card-last-msg">Последнее сообщение</span>
-                                    <span class="ques-ans__card-last-ago">1 неделю назад</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#!" class="ques-ans__card-link">
-                            <div class="ques-ans__card">
-                                <img src="img/svg/msg-ico.svg" alt="msg" class="ques-ans__card-before">
-                                <div class="ques-ans__card-info">
-                                    <h2 class="ques-ans__card-title">Разбан</h2>
-                                    <span class="ques-ans__card-author">Luckymaker</span>
-                                </div>
-
-                                <div class="ques-ans__card-users">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <span class="ques-ans__card-users-avatars ques-ans__card-users-stat">+120</span>
-                                </div>
-
-                                <div class="ques-ans__card-last">
-                                    <span class="ques-ans__card-last-msg">Последнее сообщение</span>
-                                    <span class="ques-ans__card-last-ago">15 минут назад</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#!" class="ques-ans__card-link">
-                            <div class="ques-ans__card">
-                                <img src="img/svg/msg-ico.svg" alt="msg" class="ques-ans__card-before">
-                                <div class="ques-ans__card-info">
-                                    <h2 class="ques-ans__card-title">С какого сайта можно беслпатно ск…</h2>
-                                    <span class="ques-ans__card-author">theoffnoisy</span>
-                                </div>
-
-                                <div class="ques-ans__card-users">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <span class="ques-ans__card-users-avatars ques-ans__card-users-stat">+120</span>
-                                </div>
-
-                                <div class="ques-ans__card-last">
-                                    <span class="ques-ans__card-last-msg">Последнее сообщение</span>
-                                    <span class="ques-ans__card-last-ago">9 часов назад</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#!" class="ques-ans__card-link">
-                            <div class="ques-ans__card">
-                                <img src="img/svg/msg-ico.svg" alt="msg" class="ques-ans__card-before">
-                                <div class="ques-ans__card-info">
-                                    <h2 class="ques-ans__card-title">С какого сайта можно беслпатно ск…</h2>
-                                    <span class="ques-ans__card-author">theoffnoisy</span>
-                                </div>
-
-                                <div class="ques-ans__card-users">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <span class="ques-ans__card-users-avatars ques-ans__card-users-stat">+120</span>
-                                </div>
-
-                                <div class="ques-ans__card-last">
-                                    <span class="ques-ans__card-last-msg">Последнее сообщение</span>
-                                    <span class="ques-ans__card-last-ago">9 часов назад</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#!" class="ques-ans__card-link">
-                            <div class="ques-ans__card">
-                                <img src="img/svg/pin-ico.svg" alt="msg" class="ques-ans__card-before">
-                                <div class="ques-ans__card-info">
-                                    <h2 class="ques-ans__card-title">Платная смена ника</h2>
-                                    <span class="ques-ans__card-author">SergOBW</span>
-                                </div>
-
-                                <div class="ques-ans__card-users">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <span class="ques-ans__card-users-avatars ques-ans__card-users-stat">+120</span>
-                                </div>
-
-                                <div class="ques-ans__card-last">
-                                    <span class="ques-ans__card-last-msg">Последнее сообщение</span>
-                                    <span class="ques-ans__card-last-ago">1 неделю назад</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#!" class="ques-ans__card-link">
-                            <div class="ques-ans__card">
-                                <img src="img/svg/lock-ico.svg" alt="msg" class="ques-ans__card-before">
-                                <div class="ques-ans__card-info">
-                                    <h2 class="ques-ans__card-title">Набор в модераторы</h2>
-                                    <span class="ques-ans__card-author">huymorzha</span>
-                                </div>
-
-                                <div class="ques-ans__card-users">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <span class="ques-ans__card-users-avatars ques-ans__card-users-stat">+120</span>
-                                </div>
-
-                                <div class="ques-ans__card-last">
-                                    <span class="ques-ans__card-last-msg">Последнее сообщение</span>
-                                    <span class="ques-ans__card-last-ago">1 месяц назад</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#!" class="ques-ans__card-link">
-                            <div class="ques-ans__card">
-                                <img src="img/svg/msg-ico.svg" alt="msg" class="ques-ans__card-before">
-                                <div class="ques-ans__card-info">
-                                    <h2 class="ques-ans__card-title">Разбан</h2>
-                                    <span class="ques-ans__card-author">Luckymaker</span>
-                                </div>
-
-                                <div class="ques-ans__card-users">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <span class="ques-ans__card-users-avatars ques-ans__card-users-stat">+120</span>
-                                </div>
-
-                                <div class="ques-ans__card-last">
-                                    <span class="ques-ans__card-last-msg">Последнее сообщение</span>
-                                    <span class="ques-ans__card-last-ago">15 минут назад</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="theme.html" target="_blank" class="ques-ans__card-link">
-                            <div class="ques-ans__card">
-                                <img src="img/svg/pin-ico.svg" alt="msg" class="ques-ans__card-before">
-                                <div class="ques-ans__card-info">
-                                    <h2 class="ques-ans__card-title">Платная смена ника</h2>
-                                    <span class="ques-ans__card-author">SergOBW</span>
-                                </div>
-
-                                <div class="ques-ans__card-users">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <img src="img/blue-avatar.png" alt="blue-avatar"
-                                        class="ques-ans__card-users-avatars">
-                                    <span class="ques-ans__card-users-avatars ques-ans__card-users-stat">+120</span>
-                                </div>
-
-                                <div class="ques-ans__card-last">
-                                    <span class="ques-ans__card-last-msg">Последнее сообщение</span>
-                                    <span class="ques-ans__card-last-ago">1 неделю назад</span>
-                                </div>
-                            </div>
-                        </a>
+                        </div>
+                        <!-- /.banlist__sort -->
                     </div>
-                    <!-- /.ques-ans__cards -->
+                    <!-- /.banlist__content-wrapper -->
 
+                    <div class="banlist__content">
+                        <ul class="banlist__content-header">
+                            <li class="banlist__content-header-item">
+                                Игрок
+                            </li>
+                            <li class="banlist__content-header-item">
+                                Забанил
+                            </li>
+                            <li class="banlist__content-header-item">
+                                Причина
+                            </li>
+                            <li class="banlist__content-header-item">
+                                Дата бана
+                            </li>
+                            <li class="banlist__content-header-item">
+                                Дата разбана
+                            </li>
+                        </ul>
+
+                        <div class="banlist__cards">
+                            <div class="banlist__card">
+                                <div class="banlist__user">
+                                    <img src="img/banlist-user-avatar.png" alt="banlist-user-avatar"
+                                        class="banlist__user-avatar">
+                                    <p class="banlist__user-nickname">Матюха</p>
+                                </div>
+                                <!-- /.banlist__user -->
+                                <div class="banlist__user-adm">
+                                    <img src="img/banlist-user-avatar-2.png" alt="banlist-user-avatar"
+                                        class="banlist__user-avatar">
+                                    <p class="banlist__user-nickname">Карабас ❤️</p>
+                                </div>
+                                <!-- /.banlist__user -->
+                                <div class="banlist__reason">
+                                    <span class="banlist__reason-num">3.1</span>
+                                </div>
+                                <!-- /.banlist__reason -->
+                                <div class="banlist__ban">
+                                    <span class="banlist__ban-date">Feb 2, 2019 19:28</span>
+                                </div>
+                                <!-- /.banlist__date-ban -->
+                                <div class="banlist__unban">
+                                    <span class="banlist__unban-date">Mar 20, 2019 23:14</span>
+                                </div>
+                                <!-- /.banlist__date-ban -->
+
+                            </div>
+                            <!-- /.banlist__card -->
+                            <div class="banlist__card">
+                                <div class="banlist__user">
+                                    <img src="img/banlist-user-avatar.png" alt="banlist-user-avatar"
+                                        class="banlist__user-avatar">
+                                    <p class="banlist__user-nickname">God — mateball.io</p>
+                                </div>
+                                <!-- /.banlist__user -->
+                                <div class="banlist__user-adm">
+                                    <img src="img/banlist-user-avatar-2.png" alt="banlist-user-avatar"
+                                        class="banlist__user-avatar">
+                                    <p class="banlist__user-nickname">КРУТОЙ ЧЕЛ</p>
+                                </div>
+                                <!-- /.banlist__user -->
+                                <div class="banlist__reason">
+                                    <span class="banlist__reason-num">3.1</span>
+                                </div>
+                                <!-- /.banlist__reason -->
+                                <div class="banlist__ban">
+                                    <span class="banlist__ban-date">Feb 2, 2019 19:28</span>
+                                </div>
+                                <!-- /.banlist__date-ban -->
+                                <div class="banlist__unban">
+                                    <span class="banlist__unban-date">Mar 20, 2019 23:14</span>
+                                </div>
+                                <!-- /.banlist__date-ban -->
+
+                            </div>
+                            <!-- /.banlist__card -->
+                            <div class="banlist__card">
+                                <div class="banlist__user">
+                                    <img src="img/banlist-user-avatar.png" alt="banlist-user-avatar"
+                                        class="banlist__user-avatar">
+                                    <p class="banlist__user-nickname">Vebmag_mateball.io</p>
+                                </div>
+                                <!-- /.banlist__user -->
+                                <div class="banlist__user-adm">
+                                    <img src="img/banlist-user-avatar-2.png" alt="banlist-user-avatar"
+                                        class="banlist__user-avatar">
+                                    <p class="banlist__user-nickname">КУКЕБУРЕ</p>
+                                </div>
+                                <!-- /.banlist__user -->
+                                <div class="banlist__reason">
+                                    <span class="banlist__reason-num">3.1</span>
+                                </div>
+                                <!-- /.banlist__reason -->
+                                <div class="banlist__ban">
+                                    <span class="banlist__ban-date">Feb 2, 2019 19:28</span>
+                                </div>
+                                <!-- /.banlist__date-ban -->
+                                <div class="banlist__unban">
+                                    <span class="banlist__unban-date">Mar 20, 2019 23:14</span>
+                                </div>
+                                <!-- /.banlist__date-ban -->
+
+                            </div>
+                            <!-- /.banlist__card -->
+                            <div class="banlist__card">
+                                <div class="banlist__user">
+                                    <img src="img/banlist-user-avatar.png" alt="banlist-user-avatar"
+                                        class="banlist__user-avatar">
+                                    <p class="banlist__user-nickname">nikann_</p>
+                                </div>
+                                <!-- /.banlist__user -->
+                                <div class="banlist__user-adm">
+                                    <img src="img/banlist-user-avatar-2.png" alt="banlist-user-avatar"
+                                        class="banlist__user-avatar">
+                                    <p class="banlist__user-nickname">1njecttt</p>
+                                </div>
+                                <!-- /.banlist__user -->
+                                <div class="banlist__reason">
+                                    <span class="banlist__reason-num">3.1</span>
+                                </div>
+                                <!-- /.banlist__reason -->
+                                <div class="banlist__ban">
+                                    <span class="banlist__ban-date">Feb 2, 2019 19:28</span>
+                                </div>
+                                <!-- /.banlist__date-ban -->
+                                <div class="banlist__unban">
+                                    <span class="banlist__unban-date">Mar 20, 2019 23:14</span>
+                                </div>
+                                <!-- /.banlist__date-ban -->
+
+                            </div>
+                            <!-- /.banlist__card -->
+                            <div class="banlist__card">
+                                <div class="banlist__user">
+                                    <img src="img/banlist-user-avatar.png" alt="banlist-user-avatar"
+                                        class="banlist__user-avatar">
+                                    <p class="banlist__user-nickname">matv1ks</p>
+                                </div>
+                                <!-- /.banlist__user -->
+                                <div class="banlist__user-adm">
+                                    <img src="img/banlist-user-avatar-2.png" alt="banlist-user-avatar"
+                                        class="banlist__user-avatar">
+                                    <p class="banlist__user-nickname">БИЛЛИ ДЖИН</p>
+                                </div>
+                                <!-- /.banlist__user -->
+                                <div class="banlist__reason">
+                                    <span class="banlist__reason-num">3.1</span>
+                                </div>
+                                <!-- /.banlist__reason -->
+                                <div class="banlist__ban">
+                                    <span class="banlist__ban-date">Feb 2, 2019 19:28</span>
+                                </div>
+                                <!-- /.banlist__date-ban -->
+                                <div class="banlist__unban">
+                                    <span class="banlist__unban-date">Mar 20, 2019 23:14</span>
+                                </div>
+                                <!-- /.banlist__date-ban -->
+
+                            </div>
+                            <!-- /.banlist__card -->
+                            <div class="banlist__card">
+                                <div class="banlist__user">
+                                    <img src="img/banlist-user-avatar.png" alt="banlist-user-avatar"
+                                        class="banlist__user-avatar">
+                                    <p class="banlist__user-nickname">Prettyboy</p>
+                                </div>
+                                <!-- /.banlist__user -->
+                                <div class="banlist__user-adm">
+                                    <img src="img/banlist-user-avatar-2.png" alt="banlist-user-avatar"
+                                        class="banlist__user-avatar">
+                                    <p class="banlist__user-nickname">Джиган</p>
+                                </div>
+                                <!-- /.banlist__user -->
+                                <div class="banlist__reason">
+                                    <span class="banlist__reason-num">3.1</span>
+                                </div>
+                                <!-- /.banlist__reason -->
+                                <div class="banlist__ban">
+                                    <span class="banlist__ban-date">Feb 2, 2019 19:28</span>
+                                </div>
+                                <!-- /.banlist__date-ban -->
+                                <div class="banlist__unban">
+                                    <span class="banlist__unban-date">Mar 20, 2019 23:14</span>
+                                </div>
+                                <!-- /.banlist__date-ban -->
+
+                            </div>
+                            <!-- /.banlist__card -->
+                            <div class="banlist__card">
+                                <div class="banlist__user">
+                                    <img src="img/banlist-user-avatar.png" alt="banlist-user-avatar"
+                                        class="banlist__user-avatar">
+                                    <p class="banlist__user-nickname">LOLESLY</p>
+                                </div>
+                                <!-- /.banlist__user -->
+                                <div class="banlist__user-adm">
+                                    <img src="img/banlist-user-avatar-2.png" alt="banlist-user-avatar"
+                                        class="banlist__user-avatar">
+                                    <p class="banlist__user-nickname">dimayzer/z</p>
+                                </div>
+                                <!-- /.banlist__user -->
+                                <div class="banlist__reason">
+                                    <span class="banlist__reason-num">3.1</span>
+                                </div>
+                                <!-- /.banlist__reason -->
+                                <div class="banlist__ban">
+                                    <span class="banlist__ban-date">Feb 2, 2019 19:28</span>
+                                </div>
+                                <!-- /.banlist__date-ban -->
+                                <div class="banlist__unban">
+                                    <span class="banlist__unban-date">Mar 20, 2019 23:14</span>
+                                </div>
+                                <!-- /.banlist__date-ban -->
+
+                            </div>
+                            <!-- /.banlist__card -->
+                            <div class="banlist__card">
+                                <div class="banlist__user">
+                                    <img src="img/banlist-user-avatar.png" alt="banlist-user-avatar"
+                                        class="banlist__user-avatar">
+                                    <p class="banlist__user-nickname">Рыжий</p>
+                                </div>
+                                <!-- /.banlist__user -->
+                                <div class="banlist__user-adm">
+                                    <img src="img/banlist-user-avatar-2.png" alt="banlist-user-avatar"
+                                        class="banlist__user-avatar">
+                                    <p class="banlist__user-nickname">АХАХАХ tastygo.gg</p>
+                                </div>
+                                <!-- /.banlist__user -->
+                                <div class="banlist__reason">
+                                    <span class="banlist__reason-num">3.1</span>
+                                </div>
+                                <!-- /.banlist__reason -->
+                                <div class="banlist__ban">
+                                    <span class="banlist__ban-date">Feb 2, 2019 19:28</span>
+                                </div>
+                                <!-- /.banlist__date-ban -->
+                                <div class="banlist__unban">
+                                    <span class="banlist__unban-date">Mar 20, 2019 23:14</span>
+                                </div>
+                                <!-- /.banlist__date-ban -->
+
+                            </div>
+                            <!-- /.banlist__card -->
+                        </div>
+                        <!-- /.banlist__cards -->
+                    </div>
+                    <!-- /.banlist__content -->
 
                     <div class="pagination">
 
@@ -409,7 +465,7 @@
                     </div>
                     <!-- /.pagination -->
                 </div>
-                <!-- /.ques-ans__cards__wrapper -->
+                <!-- /.news__cards__wrapper -->
 
 
                 <aside class="sidebar">
@@ -525,7 +581,7 @@
                 </aside>
                 <!-- /.sidebar -->
             </div>
-            <!-- /.ques-ans__wrapper -->
+            <!-- /.news__wrapper -->
         </div>
         <!-- /.container -->
     </div>

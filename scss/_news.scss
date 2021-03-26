@@ -63,8 +63,8 @@
     &__info-wrapper {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         margin-bottom: 20px;
+        align-items: flex-start;
     }
 
     &__stat-title {
