@@ -1,0 +1,56 @@
+.help {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        width: 825px;
+        padding: 36px 0px 36px 30px;
+        background: $main-yellow;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        columns: $main-black;
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        display: flex;
+        padding-left: 30px;
+
+        &-desc {
+            width: 225px;
+            margin-right: 30px;
+        }
+
+        &-text {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: $main-black;
+        }
+
+        &-card {
+            text-align: center;
+            padding: 30px 130px 45px 130px;
+            background: $white;
+            box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+            border-radius: 10px;
+            margin-top: -65px;
+
+            &-img {
+                margin-bottom: 10px;
+            }
+
+            &-title {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 45px;
+            }
+        }
+    }
+}

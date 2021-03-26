@@ -1,0 +1,135 @@
+.serverpage {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+
+        &-info {
+
+
+            &-wrapper {
+                width: 825px;
+                display: flex;
+                align-items: start;
+                margin-bottom: 40px;
+            }
+        }
+
+        &-title {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 38px;
+            color: $main-black;
+            margin-right: 30px;
+            margin-bottom: 10px;
+        }
+
+        &-online {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: $green-allow;
+            vertical-align: center;
+        }
+
+        &-desc {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: $light-gray;
+            margin-bottom: 40px;
+        }
+
+        &-play {
+            padding: 15px 20px;
+            background-color: $green-allow;
+            box-shadow: 0px 2px 0px #3E8A1A;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: $white;
+            margin-right: 20px;
+            transition: background-color .3s ease;
+
+            &:hover {
+                background-color: $light-green;
+            }
+        }
+
+        &-ps {
+            display: inline-block;
+            width: 171px;
+            vertical-align: middle;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: $main-black;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 41px;
+        margin-bottom: 30px;
+    }
+
+    &__card {
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 160px;
+        background-color: $white;
+        box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+        border-radius: 10px;
+        text-align: center;
+        padding: 28px 0px 30px 0;
+
+        &-title {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: $light-gray;
+            margin-bottom: 5px;
+        }
+
+        &-subtext {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 27px;
+            color: $main-black;
+        }
+    }
+
+    &__mods {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px 30px;
+
+
+        &-link {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: $white;
+            width: inherit;
+            padding: 9px 0;
+            text-align: center;
+            background-color: $main-black;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color .3s ease;
+
+            &:hover {
+                background-color: $main-yellow;
+            }
+        }
+    }
+}   

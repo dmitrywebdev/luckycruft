@@ -1,0 +1,77 @@
+.serversall {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: $main-black;
+        margin-bottom: 30px;
+    }
+
+    &__cards {
+        margin-bottom: 100px;
+    }
+
+    &__card {
+        width: 825px;
+        position: relative;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &-img {
+            position: relative;
+            &::after {
+                display: block;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.4) 100%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 10px;
+            }
+
+        }
+
+        &-pic {
+            border-radius: 10px;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            padding: 50px 0px 50px 30px;   
+            position: absolute;
+            top: 0;
+
+        }
+
+        &-title {
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 38px;
+            color: $white;
+            margin-bottom: 10px;
+        }
+
+        &-subtitle {
+            width: 260px;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: $light-gray-text;
+        }
+    }
+}
