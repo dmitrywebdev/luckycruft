@@ -85,7 +85,7 @@
                             <a href="#!" class="header__nav-link">Донат</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="#!" class="header__nav-link">Магазин</a>
+                            <a href="#!" class="header__nav-link header-active">Магазин</a>
                         </li>
                     </ul>
                 </nav>
@@ -112,26 +112,53 @@
         <div class="container">
             <div class="market__wrapper">
                 <div class="market-content__wrapper">
-                    <h1 class="market__page-title">Все новости</h1>
+                    <h1 class="market__page-title">Магазин блоков</h1>
                     <form action="#" class="market__form">
 
                         <div class="market__form-row">
                             <div class="market__form-group">
-                                <label class="market__form-laber">Сервер</label>
+                                <label class="market__form-label">Сервер</label>
                                 <select name="сервера" class="market__form-select">
-                                    <option>Сервер 1</option>
-                                    <option>Сервер 2</option>
-                                    <option>Сервер 3</option>
+                                    <option value="Techno Magic" class="market__form-option">Techno Magic</option>
+                                    <option value="MagicRPG" class="market__form-option">MagicRPG</option>
+                                    <option value="HiTech" class="market__form-option">HiTech</option>
                                 </select>
                             </div>
                             <!-- /.market__form-group -->
 
+                            <div class="market__form-group">
+                                <label class="market__form-label">Категория</label>
+                                <select name="сервера" class="market__form-select">
+                                    <option value="Музыкальные пластинки" class="market__form-option">Музыкальные
+                                        пластинки
+                                    </option>
+                                    <option value="MagicRPG" class="market__form-option">MagicRPG</option>
+                                    <option value="HiTech" class="market__form-option">HiTech</option>
+                                </select>
+                            </div>
+                            <!-- /.market__form-group -->
+
+                            <div class="market__form-group">
+                                <label class="market__form-label">Мод</label>
+                                <select name="сервера" class="market__form-select">
+                                    <option value="SUPERDIAMONDSTOOL" class="market__form-option">
+                                        SUPERDIAMONDSTOOL</option>
+                                    <option value="MagicRPG" class="market__form-option">MagicRPG</option>
+                                    <option value="HiTech" class="market__form-option">HiTech</option>
+                                </select>
+                            </div>
+                            <!-- /.market__form-group -->
                         </div>
                         <!-- /.market__form-row -->
                         <div class="market__form-row">
-                            <input type="search" placeholder="Ищете что-то особенное?" class="market__search">
-                            <button class="market__search-btn"></button>
-                            <!-- /.market__search-btn -->
+                            <form class="market__form-search">
+                                <input type="search" placeholder="Ищете что-то особенное?"
+                                    class="market__form-searchfield">
+                                <button class="market__form-searchfield-btn"></button>
+                                <!-- /.market__search-btn -->
+                            </form>
+
+                            <input type="button" class="market__clean" value="Очистить все фильтры">
                         </div>
                         <!-- /.market__form-row -->
 
@@ -148,17 +175,22 @@
                                 <li class="market__sort-drop">Сортировать по:
                                     <ul class="market__sort-list">
                                         <li class="market__sort-item">
-                                            <a href="#!" class="market__sort-link active-sort-link">актуальности</a>
+                                            <a href="#!" class="market__sort-link">популярности</a>
                                             <!-- /.market__sort-link -->
                                         </li>
                                         <!-- /.market__sort-item -->
                                         <li class="market__sort-item">
-                                            <a href="#!" class="market__sort-link">популярности</a>
+                                            <a href="#!" class="market__sort-link">возрастанию цены</a>
                                             <!-- /.market__sort-link -->
                                         </li>
                                         <!-- /.news__sort-item -->
                                         <li class="market__sort-item">
-                                            <a href="#!" class="market__sort-link">алфавитному порядку</a>
+                                            <a href="#!" class="market__sort-link">убыванию цены</a>
+                                            <!-- /.market__sort-link -->
+                                        </li>
+                                        <!-- /.market__sort-item -->
+                                        <li class="market__sort-item">
+                                            <a href="#!" class="market__sort-link">скидкам</a>
                                             <!-- /.market__sort-link -->
                                         </li>
                                         <!-- /.market__sort-item -->
@@ -171,6 +203,419 @@
                         <!-- /.market__sort -->
                     </div>
                     <!-- /.market-content__wrapper -->
+
+                    <div class="market__cards">
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Потресканные каменные кирпичи</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/stone-block.png" alt="Потресканные каменные кирпичи"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">25 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Бамбуковые леса</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/scaffold-item.png" alt="Бамбуковые леса"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">5 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Сундук Эндера</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/chest-ender.png" alt="Сундук Эндера" class="market__card-img">
+                                <a href="#!" class="market__card-btn">10 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Алмазная руда</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/almaz-block.png" alt="Алмазная руда" class="market__card-img">
+                                <a href="#!" class="market__card-btn">10 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Прямой склон плотника</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/corner-item.png" alt="Прямой склон плотника"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">1 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Фруктовая ловушка</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/fruit-trap.png" alt="Фруктовая ловушка"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">2 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Берёза</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/birch-block.png" alt="Берёза" class="market__card-img">
+                                <a href="#!" class="market__card-btn">1 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Супер алмазная кирка</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/pick-item.png" alt="Супер алмазная кирка"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">60 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Взрывное зелье регенирации I</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/potion-item.png" alt="Взрывное зелье регенирации I"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">8 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Вощённые полусостаренные резные медн…</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/semiblock.png" alt="Вощённые полусостаренные резные медн…"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">8 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Алмазная руда</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/almaz-block.png" alt="Алмазная руда" class="market__card-img">
+                                <a href="#!" class="market__card-btn">10 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Сундук Эндера</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/chest-ender.png" alt="Сундук Эндера" class="market__card-img">
+                                <a href="#!" class="market__card-btn">10 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Бамбуковые леса</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/scaffold-item.png" alt="Бамбуковые леса"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">5 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Прямой склон плотника</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/corner-item.png" alt="Прямой склон плотника"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">1 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Фруктовая ловушка</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/fruit-trap.png" alt="Фруктовая ловушка"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">2 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Потресканные каменные кирпичи</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/stone-block.png" alt="Потресканные каменные кирпичи"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">25 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Бамбуковые леса</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/scaffold-item.png" alt="Бамбуковые леса"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">5 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Сундук Эндера</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/chest-ender.png" alt="Сундук Эндера" class="market__card-img">
+                                <a href="#!" class="market__card-btn">10 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Алмазная руда</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/almaz-block.png" alt="Алмазная руда" class="market__card-img">
+                                <a href="#!" class="market__card-btn">10 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Прямой склон плотника</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/corner-item.png" alt="Прямой склон плотника"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">1 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Фруктовая ловушка</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/fruit-trap.png" alt="Фруктовая ловушка"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">2 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Берёза</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/birch-block.png" alt="Берёза" class="market__card-img">
+                                <a href="#!" class="market__card-btn">1 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Супер алмазная кирка</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/pick-item.png" alt="Супер алмазная кирка"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">60 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Взрывное зелье регенирации I</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/potion-item.png" alt="Взрывное зелье регенирации I"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">8 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Вощённые полусостаренные резные медн…</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/semiblock.png" alt="Вощённые полусостаренные резные медн…"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">8 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Алмазная руда</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/almaz-block.png" alt="Алмазная руда" class="market__card-img">
+                                <a href="#!" class="market__card-btn">10 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Сундук Эндера</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/chest-ender.png" alt="Сундук Эндера" class="market__card-img">
+                                <a href="#!" class="market__card-btn">10 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Бамбуковые леса</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/scaffold-item.png" alt="Бамбуковые леса"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">5 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Прямой склон плотника</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/corner-item.png" alt="Прямой склон плотника"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">1 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+
+                        <div class="market__card">
+                            <div class="market__card-title-wrap">
+                                <h2 class="market__card-title">Фруктовая ловушка</h2>
+                            </div>
+                            <!-- /.market__card-title-wrap -->
+                            <div class="market__card-info-wrap">
+                                <img src="img/market-item/fruit-trap.png" alt="Фруктовая ловушка"
+                                    class="market__card-img">
+                                <a href="#!" class="market__card-btn">2 ЛК / шт</a>
+                            </div>
+                            <!-- /.market__card-info-wrap -->
+                        </div>
+                        <!-- /.marker__card -->
+                    </div>
+                    <!-- /.market__cards -->
 
                     <div class="pagination">
 

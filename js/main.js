@@ -38,13 +38,17 @@ $(document).ready(function () {
 
 
     $('.donate__accordion-cases').slick({
-        arrows: false,
+        arrows: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         infinite: false,
         variableWidth: true,
     });
-});
+
+//     $(".market__clean").click(function () {
+//         $('.market__form-select').selectedIndex = 0;
+//     });
+// });
 
 
 

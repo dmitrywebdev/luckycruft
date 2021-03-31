@@ -1,8 +1,12 @@
 .donate {
+   
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        position: relative;
+
+        
     }
 
     &__accordion {
@@ -207,7 +211,6 @@
             width: 825px;
             justify-content: space-between;
             margin-bottom: 20px;
-
         }
 
         &-case {
@@ -218,7 +221,53 @@
                 border-radius: 10px;
                 padding: 30px 0px 0px 20px;
                 margin-right: 30px;
-                background: $light-gray url(../img/iron-case.png) no-repeat right bottom;
+                background: $black-hover url(../img/iron-case.png) no-repeat right bottom;
+            }
+
+            &-golden {
+                width: 160px;
+                height: 160px;
+                border-radius: 10px;
+                padding: 30px 0px 0px 20px;
+                margin-right: 30px;
+                background: $golden url(../img/golden-case.png) no-repeat right bottom;
+                
+            }
+
+            &-almaz {
+                width: 160px;
+                height: 160px;
+                border-radius: 10px;
+                padding: 30px 0px 0px 20px;
+                margin-right: 30px;
+                background: $electric url(../img/almaz-case.png) no-repeat right bottom;
+            }
+
+            &-platinum {
+                width: 160px;
+                height: 160px;
+                border-radius: 10px;
+                padding: 30px 0px 0px 20px;
+                margin-right: 30px;
+                background: $light-gray-text url(../img/platinum-case.png) no-repeat right bottom;
+            }
+
+            &-ender {
+                width: 160px;
+                height: 160px;
+                border-radius: 10px;
+                padding: 30px 0px 0px 20px;
+                margin-right: 30px;
+                background: $deluxe url(../img/ender-case.png) no-repeat right bottom;
+            }
+
+            &-lucky {
+                width: 160px;
+                height: 160px;
+                border-radius: 10px;
+                padding: 30px 0px 0px 20px;
+                margin-right: 30px;
+                background: $red-warning url(../img/lucky-case.png) no-repeat right bottom;
             }
 
             &-title {
@@ -240,12 +289,82 @@
     
 }
 
+
+.warning {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    top: -90px;
+    right: 0;
+    padding: 15px 30px 15px 20px;
+    background-color: $red-warning;
+    box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.4);
+    border-radius: 10px;
+
+    &__img {
+        margin-right: 10px;
+    }
+
+    &__info {
+
+        &-title {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: $white;
+        }
+
+        &-subtitle {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: $white;
+        }
+    }
+}
+
+
 .slick-list {
     overflow: hidden;
 }
 .slick-track {
     display: flex;
 }
+
+.donate__accordion-cases .slick-arrow {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    font-size: 0;
+}
+
+.donate__accordion-cases .slick-arrow.slick-prev {
+    left: 0;
+    visibility: hidden;
+    z-index: -5;
+}
+
+.donate__accordion-cases .slick-arrow.slick-next {
+    height: 100%;
+    width: 65px;
+    border: 0;
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
+    right: 0;
+
+    &::after {
+        display: block;
+        content: '';
+        background: url(../img/arrow-next.png) no-repeat center center;
+        width: 8px;
+        height: 15px;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        z-index: 9;
+    }
+}
+
 
 
 
@@ -330,6 +449,18 @@
         background: $main-yellow;
         border-radius: 10px;
         margin-bottom: 20px;
+        position: relative;
+
+        &::before {
+            display: block;
+            content: '';
+            background: url(../img/svg/notice.svg) no-repeat left center;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            left: 30px;
+            top: 13px;
+        }
     }
 
     &-more {
@@ -454,6 +585,18 @@
         background: $main-yellow;
         border-radius: 10px;
         margin-bottom: 20px;
+        position: relative;
+
+        &::before {
+            display: block;
+            content: '';
+            background: url(../img/svg/notice.svg) no-repeat left center;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            left: 30px;
+            top: 13px;
+        }
     }
 
     &-btn-wrapper {display: flex;}
@@ -674,6 +817,18 @@
         background: $main-yellow;
         border-radius: 10px;
         margin-bottom: 20px;
+        position: relative;
+
+        &::before {
+            display: block;
+            content: '';
+            background: url(../img/svg/notice.svg) no-repeat left center;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            left: 30px;
+            top: 13px;
+        }
     }
 
     &-btn-wrapper {display: flex;}
