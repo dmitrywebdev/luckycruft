@@ -1171,6 +1171,10 @@ body {
   fill: #2A2A34;
 }
 
+.pagination-center {
+  margin-left: 160px;
+}
+
 .item-arrow-left {
   margin-right: 48px;
 }
@@ -5310,4 +5314,575 @@ input[type="color" i]::-webkit-color-swatch-wrapper {
   border: none;
   border-radius: 5px;
   padding: 0;
+}
+
+.profileplayer__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #2A2A34;
+  margin-bottom: 20px;
+}
+
+.profileplayer__content-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.profileplayer__content-top-acc {
+  width: 445px;
+  height: 160px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+          box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+  border-radius: 10px;
+  padding: 35px 0px 35px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profileplayer__content-top-acc-img {
+  margin-right: 30px;
+  position: relative;
+}
+
+.profileplayer__content-top-acc-img::after {
+  display: block;
+  content: '';
+  width: 19px;
+  height: 19px;
+  background: #6EBB49;
+  border: 3px solid #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.profileplayer__content-top-acc-nick {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #2A2A34;
+  margin-bottom: 2px;
+}
+
+.profileplayer__content-top-acc-id {
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2A2A34;
+  margin-bottom: 12px;
+}
+
+.profileplayer__content-top-acc-status {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FF5A5A;
+}
+
+.profileplayer__content-top-stats {
+  width: 255px;
+  height: 160px;
+  background: #FFFFFF;
+  padding: 52px 25px 52px 23px;
+  -webkit-box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+          box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+  border-radius: 10px;
+}
+
+.profileplayer__content-top-stats-reg {
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2A2A34;
+  margin-bottom: 4px;
+}
+
+.profileplayer__content-top-stats-online {
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2A2A34;
+  margin-bottom: 4px;
+}
+
+.profileplayer__content-top-stats-ingame {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2A2A34;
+}
+
+.profileplayer__content-top-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  height: 160px;
+  background: #6EBB49;
+  padding: 45px 0px 45px 30px;
+  -webkit-box-shadow: 0px 4px 15px rgba(74, 153, 36, 0.4);
+          box-shadow: 0px 4px 15px rgba(74, 153, 36, 0.4);
+  border-radius: 10px;
+}
+
+.profileplayer__content-top-status-img {
+  margin-right: 30px;
+}
+
+.profileplayer__content-top-status-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin-bottom: 2px;
+}
+
+.profileplayer__content-top-status-subtitle {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.profileplayer__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profileplayer__content-last {
+  width: 825px;
+  padding: 30px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+          box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+  border-radius: 10px;
+  margin-bottom: 90px;
+}
+
+.profileplayer__content-last-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #2A2A34;
+  margin-bottom: 30px;
+}
+
+.profileplayer__content-last-msg {
+  padding: 20px 0px 30px 30px;
+  background: #F2FAFF;
+  border: 1px solid #E6E6EA;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.profileplayer__content-last-msg:last-child {
+  margin-bottom: 30px;
+}
+
+.profileplayer__content-last-msg-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.profileplayer__content-last-msg-user-img {
+  margin-right: 11px;
+}
+
+.profileplayer__content-last-msg-user-theme {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2A2A34;
+  margin-bottom: 4px;
+}
+
+.profileplayer__content-last-msg-user-written {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ACACAC;
+}
+
+.profileplayer__content-last-msg-user-author {
+  color: #169DFF;
+}
+
+.profileplayer__content-last-msg-text {
+  width: 575px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2A2A34;
+  margin-bottom: 30px;
+}
+
+.profileplayer__content-last-msg-stat {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.profileplayer__content-last-msg-stat-number {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ACACAC;
+}
+
+.profileplayer__content-last-msg-stat-count {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ACACAC;
+}
+
+.profileplayer__sidebar-send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 255px;
+  height: 92px;
+  padding: 28px 0px 28px 29px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+          box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.profileplayer__sidebar-send-img {
+  margin-right: 20px;
+}
+
+.profileplayer__sidebar-send-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2A2A34;
+  margin-bottom: 2px;
+}
+
+.profileplayer__sidebar-send-count {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2A2A34;
+}
+
+.profileplayer__sidebar-received {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 255px;
+  height: 92px;
+  padding: 28px 0px 28px 29px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+          box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.profileplayer__sidebar-received-img {
+  margin-right: 20px;
+}
+
+.profileplayer__sidebar-received-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2A2A34;
+  margin-bottom: 2px;
+}
+
+.profileplayer__sidebar-received-count {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2A2A34;
+}
+
+.profileplayer__sidebar-written {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 255px;
+  height: 92px;
+  padding: 28px 0px 28px 29px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+          box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.profileplayer__sidebar-written-img {
+  margin-right: 20px;
+}
+
+.profileplayer__sidebar-written-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2A2A34;
+  margin-bottom: 2px;
+}
+
+.profileplayer__sidebar-written-count {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2A2A34;
+}
+
+.profileplayer__sidebar-discussed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 255px;
+  height: 92px;
+  padding: 28px 0px 28px 29px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+          box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.profileplayer__sidebar-discussed-img {
+  margin-right: 20px;
+}
+
+.profileplayer__sidebar-discussed-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2A2A34;
+  margin-bottom: 2px;
+}
+
+.profileplayer__sidebar-discussed-count {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2A2A34;
+}
+
+.profileplayer__sidebar-achievements {
+  width: 255px;
+  height: 92px;
+  padding: 20px 30px 20px 30px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+          box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.profileplayer__sidebar-achievements-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+
+.profileplayer__sidebar-achievements-info-title {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2A2A34;
+}
+
+.profileplayer__sidebar-achievements-info-of {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ACACAC;
+}
+
+.profileplayer__sidebar-achievements-pic {
+  margin-left: -10px;
+}
+
+.profileplayer__sidebar-achievements-pic:first-child {
+  margin: 0;
+}
+
+.profileplayer__sidebar-friends {
+  width: 255px;
+  height: 92px;
+  padding: 20px 30px 20px 30px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+          box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+  border-radius: 10px;
+}
+
+.profileplayer__sidebar-friends-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+
+.profileplayer__sidebar-friends-info-title {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2A2A34;
+}
+
+.profileplayer__sidebar-friends-info-of {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ACACAC;
+}
+
+.profileplayer__sidebar-friends-pic {
+  margin-left: -10px;
+}
+
+.profileplayer__sidebar-friends-pic:first-child {
+  margin: 0;
+}
+
+.notification {
+  margin-bottom: 90px;
+}
+
+.notification__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #2A2A34;
+  margin-bottom: 6px;
+}
+
+.notification__subtitle {
+  display: block;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FF5A5A;
+  margin-bottom: 50px;
+}
+
+.notification__card {
+  width: 100%;
+  height: 92px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+          box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px 30px 32px 37px;
+  margin-bottom: 20px;
+}
+
+.notification__card .notification-active::after {
+  display: block;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-color: #FF5A5A;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  top: -9px;
+  right: -8px;
+}
+
+.notification__card:last-child {
+  margin-bottom: 30px;
+}
+
+.notification__card-link {
+  text-decoration: none;
+}
+
+.notification__card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notification__card-info-img {
+  margin-right: 17px;
+  position: relative;
+}
+
+.notification__card-info-title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2A2A34;
+}
+
+.notification__card-date-ago {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2A2A34;
 }
