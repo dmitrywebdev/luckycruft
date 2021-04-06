@@ -36,6 +36,17 @@ $(document).ready(function () {
         $(this).toggleClass('accordion-active').next().slideToggle(600);
     });
 
+    $('.tabs__triggers-item').click(function (e) {
+        e.preventDefault();
+
+        $('.tabs__triggers-item').removeClass('tabs__triggers-item-active');
+        $('.tabs__content-item').removeClass('tabs__content-item-active');
+
+        $(this).addClass('tabs__triggers-item-active');
+        $($(this).attr('href')).addClass('tabs__content-item-active');
+    });
+
+    $('.tabs__triggers-item:first').click();
 
     $('.donate__accordion-cases').slick({
         arrows: true,
@@ -45,10 +56,7 @@ $(document).ready(function () {
         variableWidth: true,
     });
 
-//     $(".market__clean").click(function () {
-//         $('.market__form-select').selectedIndex = 0;
-//     });
-// });
+});
 
 
 

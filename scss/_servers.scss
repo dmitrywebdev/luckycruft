@@ -86,6 +86,22 @@
         }
     }
 
+    &__soon {
+        width: 160px;
+        height: 160px;
+        border-radius: 10px;
+        padding: 30px 67px 64px 20px;
+        background: $light-gray;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+
+        &-text {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: $white;
+        }
+    }
+
     &__all {
         padding: 48px 17px 34px 17px;
         text-align: center;

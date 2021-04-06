@@ -1,0 +1,284 @@
+.about {
+
+    &__intro {
+        margin-top: 114px;
+        margin-bottom: 105px;   
+        padding: 152px 0;
+        background: $main-black;
+        position: relative;
+
+        &-text {
+            text-align: center;
+            width: 825px;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 49px;
+            color: $white;
+            margin: 0 auto;
+        }
+    }
+}
+
+.intro-way-1 {
+    position: absolute;
+    top: -58px;
+    left: 0;
+}
+
+.intro-way-2 {
+    position: absolute;
+    top: -55px;
+    right: 30px;
+}
+
+.intro-way-3 {
+    position: absolute;
+    bottom: -54px;
+    left: 0;
+}
+
+.intro-plus-1 {
+    position: absolute;
+    top: -30px;
+    left: 732px;
+}
+
+.intro-plus-2 {
+    position: absolute;
+    top: -30px;
+    right: 113px;
+    transform: rotate(42deg);
+}
+
+.intro-plus-3 {
+    position: absolute;
+    bottom: -45px;
+    right: 543px;
+    transform: rotate(26deg);
+}
+
+.intro-plus-4 {
+    position: absolute;
+    bottom: 152px;
+    left: -10px;
+    transform: rotate(10deg);
+}
+
+.about__way {
+
+    &-wrapper {
+        height: 1740px;
+        position: relative;
+        margin-bottom: 55px;
+    }
+
+    &-text {
+        text-align: center;
+        width: 244px;
+    }
+    &-title {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 38px;
+        color: $main-black;
+        margin-bottom: 6px;
+    }
+
+    &-span {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: $main-black;
+    }
+
+    &-link {
+        text-decoration: none;
+        color: $blue-link;
+    }
+}
+
+.text-1 {
+    position: absolute;
+    top: 145px;
+    left: 34px;
+}
+
+.way-start {
+    position: absolute;
+    top: 159px;
+    left: 259px;
+}
+
+.way-idea {
+    position: absolute;
+    top: 7px;
+    left: 235px;
+}
+
+.way-1 {
+    position: absolute;
+    top: 143px;
+    left: 309px;
+}
+
+.way-gamepad {
+    position: absolute;
+    top: 137px;
+    right: 131px;
+}
+
+.way-tiktok {
+    position: absolute;
+    top: 354px;
+    left: 44px;
+}
+
+.way-world {
+    position: absolute;
+    top: 473px;
+    left: 447px;
+}
+
+.way-smile {
+    position: absolute;
+    top: 397px;
+    right: 33px;
+}
+
+.way-coin {
+    position: absolute;
+    top: 802px;
+    left: 250px;
+}
+
+.way-firework {
+    position: absolute;
+    top: 794px;
+    right: 53px;
+}
+
+.way-settings {
+    position: absolute;
+    top: 1261px;
+    left: 352px;
+}
+
+.way-stonks {
+    position: absolute;
+    top: 1321px;
+    right: 211px;
+}
+
+.way-welltome {
+    position: absolute;
+    top: 1623px;
+    left: 360px;
+}
+
+.text-2 {
+    position: absolute;
+    top: 255px;
+    right: 274px;
+}
+
+.way-2 {
+    position: absolute;
+    top: 290px;
+    left: 280px;
+}
+
+.text-3 {
+    position: absolute;
+    top: 452px;
+    left: 210px;
+}
+
+.way-3 {
+    position: absolute;
+    top: 448px;
+    left: 323px;
+}
+
+.text-4 {
+    position: absolute;
+    top: 584px;
+    right: 106px;
+
+}
+
+.way-4 {
+    position: absolute;
+    top: 697px;
+    left: 337px;
+}
+
+.text-5 {
+    position: absolute;
+    top: 905px;
+    left: 73px;
+}
+
+.way-5 {
+    position: absolute;
+    top: 1035px;
+    left: 138px;
+}
+
+.text-6 {
+    position: absolute;
+    top: 1178px;
+    left: 442px;
+}
+
+.way-6 {
+    position: absolute;
+    top: 940px;
+    left: 573px;
+}
+
+.text-7 {
+    position: absolute;
+    top: 955px;
+    right: -29px;
+}
+
+.way-7 {
+    position: absolute;
+    top: 1078px;
+    right: 65px;
+}
+
+.text-8 {
+    position: absolute;
+    top: 1418px;
+    right: 77px;
+}
+
+.way-8 {
+    position: absolute;
+    top: 1462px;
+    right: 333px;
+}
+
+.text-9 {
+    position: absolute;
+    top: 1550px;
+    left: 125px;
+}
+
+.about__persons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.about__viu {
+    padding-top: 100px;
+}
+
+.about-thx {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 130px;
+}
