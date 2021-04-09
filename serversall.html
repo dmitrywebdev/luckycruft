@@ -15,7 +15,7 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__logo">
-                    <a href="index.html" class="header__link">
+                    <a href="#!" class="header__link">
                         <img src="img/logo.png" alt="" class="header__pic">
                     </a>
                     <!-- /.header__link -->
@@ -72,17 +72,58 @@
                             </ul>
                         </li>
                         <li class="header__nav-item">
-                            <a href="#!" class="header__nav-link">Донат</a>
+                            <a href="donate.html" target="_blank" class="header__nav-link">Донат</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="#!" class="header__nav-link">Магазин</a>
+                            <a href="market.html" target="_blank" class="header__nav-link">Магазин</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="header__reg">
-                    <a href="#!" class="header__reg-login">Войти</a>
-                    <a href="#!" class="header__reg-signup btn-yellow">Регистрация</a>
+                    <a href="#!" class="header__reg-login" data-modal="#modal__login">Войти</a>
+                    <a href="#!" class="header__reg-signup btn-yellow" data-modal="#modal__registration">Регистрация</a>
                 </div>
+
+                <div class="header__acc">
+                    <div class="header__acc-wrapper">
+                        <div class="header__acc-img">
+                            <img src="img/sidebar-avatar.png" alt="avatar" class="header__acc-pic">
+                        </div>
+
+                        <ul class="header__acc-list">
+                            <li class="header__acc-item">
+                                <a href="#!" class="header__acc-link">greenkoala518</a>
+                                <ul class="header__acc-sublist">
+                                    <li class="header__acc-subitem">
+                                        <a href="profile.html" target="_blank" class="header__acc-sublink">Личный
+                                            кабинет</a>
+                                    </li>
+                                    <li class="header__acc-subitem">
+                                        <a href="profileplayer.html" target="_blank"
+                                            class="header__acc-sublink">Профиль</a>
+                                    </li>
+                                    <li class="header__acc-subitem">
+                                        <a href="notifications.html" target="_blank"
+                                            class="header__acc-sublink">Уведомления</a>
+                                    </li>
+                                    <li class="header__acc-subitem">
+                                        <a href="download.html" target="_blank" class="header__acc-sublink">Скачать
+                                            лаунчер</a>
+                                    </li>
+                                    <li class="header__acc-subitem">
+                                        <a href="settings.html" target="_blank"
+                                            class="header__acc-sublink">Настройки</a>
+                                    </li>
+                                    <li class="header__acc-subitem">
+                                        <a href="#!" class="header__acc-sublink">Выход</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.header__acc-wrapper -->
+                </div>
+                <!-- /.header__acc -->
             </div>
             <!-- /.header__wrapper -->
         </div>

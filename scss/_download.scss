@@ -61,13 +61,20 @@
 
             &-btn {
                 padding: 15px 35px;  
+            }
 
+            &-button {
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                color: $light-gray-text;
+                padding: 15px 20px;
+                background-color: $divide-grey;
+                box-shadow: 0px 2px 0px #ACACAC;
+                border-radius: 10px;
+                cursor: default;
             }
         }
     }
-}
-
-.btn-inactive {
-    padding: 15px 20px;
-    cursor: default;
 }

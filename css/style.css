@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -229,7 +229,7 @@ input[type=number] {
 .header__nav-link {
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: normal;
   color: #2A2A34;
   text-decoration: none;
   -webkit-transition: color .3s ease;
@@ -295,7 +295,7 @@ input[type=number] {
 }
 
 .header__reg {
-  display: block;
+  display: none;
 }
 
 .header__reg-login {
@@ -323,7 +323,7 @@ input[type=number] {
 }
 
 .header__acc {
-  display: none;
+  display: block;
   margin-left: 48px;
 }
 
@@ -2550,7 +2550,7 @@ input[type=number] {
   font-size: 12px;
   line-height: 16px;
   color: #2A2A34;
-  margin-left: 118px;
+  margin-left: 112px;
 }
 
 .banlist__unban-date {
@@ -2951,8 +2951,17 @@ input[type=number] {
   padding: 15px 35px;
 }
 
-.btn-inactive {
+.download__content-card-button {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ACACAC;
   padding: 15px 20px;
+  background-color: #E6E6EA;
+  -webkit-box-shadow: 0px 2px 0px #ACACAC;
+          box-shadow: 0px 2px 0px #ACACAC;
+  border-radius: 10px;
   cursor: default;
 }
 
