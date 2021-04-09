@@ -80,8 +80,8 @@
                     </ul>
                 </nav>
                 <div class="header__reg">
-                    <a href="#!" class="header__reg-login">Войти</a>
-                    <a href="#!" class="header__reg-signup btn-yellow">Регистрация</a>
+                    <a href="#!" class="header__reg-login" data-modal="#modal__login">Войти</a>
+                    <a href="#!" class="header__reg-signup btn-yellow" data-modal="#modal__registration">Регистрация</a>
                 </div>
 
                 <div class="header__acc">
@@ -496,6 +496,178 @@
         <!-- /.footer__container -->
     </footer>
     <!-- /.footer -->
+
+    <div class="onboarding">
+        <div class="onboarding__body">
+            <div class="onboarding__content">
+                <img src="img/close-img.png" alt="close" class="onboarding__close">
+                <h1 class="onboarding__title">Добро пожаловать на LuckyCraft!</h1>
+                <span class="onboarding__text">Вы уже на полпути к огромному миру приключений и подвигов. Для того,
+                    чтобы начать играть нужно выполнить всего 2 шага.</span>
+                <div class="onboarding__steps">
+                    <div class="onboarding__step">
+                        <div class="onboarding__step-img">
+                            <img src="img/popup-1.png" alt="1" class="onboarding__step-pic">
+                        </div>
+                        <!-- /.onboarding__step-img -->
+                        <div class="onboarding__step-info">
+                            <span class="onboarding__step-info-title">Выберите сервер, который вам по душе</span>
+                            <a href="serversall.html" target="_blank" class="onboarding__step-info-link">Список
+                                серверов</a>
+                        </div>
+                        <!-- /.onboarding__step-info -->
+                    </div>
+                    <!-- /.onboarding__step -->
+
+                    <div class="onboarding__step">
+                        <div class="onboarding__step-img">
+                            <img src="img/popup-2.png" alt="2" class="onboarding__step-pic">
+                        </div>
+                        <!-- /.onboarding__step-img -->
+                        <div class="onboarding__step-info info-2">
+                            <span class="onboarding__step-info-title">Скачайте наш лаунчер и вперёд играть!</span>
+                            <a href="serversall.html" target="_blank" class="onboarding__step-info-link">Скачать</a>
+                        </div>
+                        <!-- /.onboarding__step-info -->
+                    </div>
+                    <!-- /.onboarding__step -->
+                </div>
+                <!-- /.onboarding__steps -->
+            </div>
+            <!-- /.onboarding__content -->
+            <img src="img/apple-1.png" alt="apple" class="apple-1">
+            <img src="img/apple-2.png" alt="apple" class="apple-2">
+            <img src="img/apple-3.png" alt="apple" class="apple-3">
+            <img src="img/apple-4.png" alt="apple" class="apple-4">
+            <img src="img/apple-5.png" alt="apple" class="apple-5">
+        </div>
+        <!-- /.onboarding__body -->
+    </div>
+    <!-- /.onboarding -->
+
+    <div class="registration modal" id="modal__registration">
+        <div class="registration__body">
+            <div class="registration__content modal-content">
+                <h2 class="registration__title">Регистрация</h2>
+
+                <form action="#" class="registration__form">
+                    <label class="registration__label">Логин</label>
+                    <input type="text" class="registration__input-log">
+
+                    <label class="registration__label">Логин</label>
+                    <input type="email" class="registration__input-mail">
+
+                    <label class="registration__label">Логин</label>
+                    <input type="password" class="registration__input-pass">
+                </form>
+                <!-- /.registration__form -->
+
+                <div class="registration__checkbox">
+                    <input type="checkbox" id="checkbox_2" class="registration__checkbox-item">
+                    <label for="checkbox_2" class="registration__checkbox-label">Я ознакомлен и принимаю <a href="#!"
+                            class="registration__link"> правила
+                            Luckycraft.ru</a></label>
+                </div>
+                <!-- /.registration__checkbox -->
+                <button class="registration__reg">Зарегистрироваться</button>
+
+                <p class="registration__already">Уже есть аккаунт? <a href="#!" class="registration__link"
+                        data-modal="#modal__login">Войти</a></p>
+            </div>
+            <!-- /.registration__content -->
+        </div>
+        <!-- /.registration__body -->
+    </div>
+    <!-- /.registration -->
+    <div class="login modal" id="modal__login">
+        <div class="login__body">
+            <div class="login__content modal-content">
+                <h2 class="login__title">Вход</h2>
+
+                <form action="#" class="login__form">
+                    <label class="login__label">Логин</label>
+                    <input type="text" class="login__input-log">
+
+                    <label class="login__label">Пароль</label>
+                    <input type="password" class="login__input-pass">
+                </form>
+                <a href="#!" class="login__forget" data-modal="#modal__recovery">Забыли пароль?</a>
+                <div class="login__wrong-wrap">
+                    <div class="login__wrong">
+                        <img src="img/wrong-img.png" alt="wrong" class="login__wrong-img">
+                        <h2 class="login__wrong-text">Неправильный логин или пароль</h2>
+                    </div>
+                    <!-- /.login__wrang -->
+                </div>
+                <button class="login__login">Войти</button>
+                <p class="login__already">Нет аккаунта? <a href="#!" data-modal="#modal__registration"
+                        class="registration__link">Зарегистрироваться</a>
+                </p>
+                <div class="login__socials">
+                    <a href="#!" class="login__socials-link">
+                        <img src="img/socials-yandex.png" alt="yandex" class="login__socials-img">
+                    </a>
+                    <a href="#!" class="login__socials-link">
+                        <img src="img/socials-vk.png" alt="vk" class="login__socials-img">
+                    </a>
+                    <a href="#!" class="login__socials-link">
+                        <img src="img/socials-steam.png" alt="steam" class="login__socials-img">
+                    </a>
+                    <a href="#!" class="login__socials-link">
+                        <img src="img/socials-telega.png" alt="telega" class="login__socials-img">
+                    </a>
+                    <a href="#!" class="login__socials-link">
+                        <img src="img/socials-discord.png" alt="discord" class="login__socials-img">
+                    </a>
+                </div>
+                <!-- /.login__socials -->
+            </div>
+            <!-- /.login__content -->
+        </div>
+        <!-- /.login__body -->
+    </div>
+    <!-- /.login -->
+
+    <div class="recovery modal" id="modal__recovery">
+        <div class="recovery__body">
+            <div class="recovery__content modal-content">
+                <h2 class="recovery__title">Восстановление пароля</h2>
+
+                <form action="#" class="recovery__form">
+                    <label class="recovery__label">Логин</label>
+                    <input type="email" class="recovery__input-mail">
+                </form>
+
+                <div class="recovery__recovery-wrap">
+                    <button class="recovery__recovery">Восстановить</button>
+                    <p class="recovery__recovery-or">Или</p>
+                </div>
+
+                <div class="login__socials">
+                    <a href="#!" class="login__socials-link">
+                        <img src="img/socials-yandex.png" alt="yandex" class="login__socials-img">
+                    </a>
+                    <a href="#!" class="login__socials-link">
+                        <img src="img/socials-vk.png" alt="vk" class="login__socials-img">
+                    </a>
+                    <a href="#!" class="login__socials-link">
+                        <img src="img/socials-steam.png" alt="steam" class="login__socials-img">
+                    </a>
+                    <a href="#!" class="login__socials-link">
+                        <img src="img/socials-telega.png" alt="telega" class="login__socials-img">
+                    </a>
+                    <a href="#!" class="login__socials-link">
+                        <img src="img/socials-discord.png" alt="discord" class="login__socials-img">
+                    </a>
+                </div>
+                <!-- /.login__socials -->
+            </div>
+            <!-- /.recovery__content -->
+        </div>
+        <!-- /.recovery__body -->
+    </div>
+    <!-- /.recovery -->
+
     <script src="https://kit.fontawesome.com/31c08b509c.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>

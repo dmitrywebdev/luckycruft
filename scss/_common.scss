@@ -15,9 +15,22 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
+
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
 
 .container {
     max-width: 1110px;

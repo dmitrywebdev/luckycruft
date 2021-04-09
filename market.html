@@ -213,7 +213,7 @@
                             <div class="market__card-info-wrap">
                                 <img src="img/market-item/stone-block.png" alt="Потресканные каменные кирпичи"
                                     class="market__card-img">
-                                <a href="#!" class="market__card-btn">25 ЛК / шт</a>
+                                <a href="#!" class="market__card-btn" data-modal="#modal__buy">25 ЛК / шт</a>
                             </div>
                             <!-- /.market__card-info-wrap -->
                         </div>
@@ -841,6 +841,37 @@
         <!-- /.footer__container -->
     </footer>
     <!-- /.footer -->
+
+    <div class="buy modal" id="modal__buy">
+        <div class="buy__body">
+            <div class="buy__content modal-content">
+                <div class="buy__content-wrapper">
+                    <div class="buy__content-info">
+                        <h2 class="buy__content-info-title">Вощённые полусостаренные резные медные ступеньки</h2>
+                        <span class="buy__content-info-id">ID: waxed_semi_weathered_cut_copper_stairs</span>
+
+                        <div class="buy__content-count">
+                            <img src="img/svg/minus.svg" alt="minus" class="buy__content-count-counter minus">
+                            <input type="number" class="buy__content-count-input" value="1000">
+                            <img src="img/svg/plus.svg" alt="minus" class="buy__content-count-counter plus">
+                        </div>
+                        <!-- /.buy__content-count -->
+                    </div>
+                    <!-- /.buy__content-info -->
+                    <div class="buy__content-img">
+                        <img src="img/stone-block-big.png" alt="stone-block" class="buy__content-pic">
+                    </div>
+                    <!-- /.buy__content-img -->
+                </div>
+                <!-- /.buy__content-wrapper -->
+                <button class="buy__content-buy">Купить за 1000 ЛК</button>
+            </div>
+            <!-- /.buy__content -->
+        </div>
+        <!-- /.buy__body -->
+    </div>
+    <!-- /.buy -->
+
     <script src="https://kit.fontawesome.com/31c08b509c.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>

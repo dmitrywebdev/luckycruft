@@ -216,6 +216,7 @@
         &-case {
 
             &-iron {
+                cursor: pointer;
                 width: 160px;
                 height: 160px;
                 border-radius: 10px;
@@ -225,6 +226,7 @@
             }
 
             &-golden {
+                cursor: pointer;
                 width: 160px;
                 height: 160px;
                 border-radius: 10px;
@@ -235,6 +237,7 @@
             }
 
             &-almaz {
+                cursor: pointer;
                 width: 160px;
                 height: 160px;
                 border-radius: 10px;
@@ -244,6 +247,7 @@
             }
 
             &-platinum {
+                cursor: pointer;
                 width: 160px;
                 height: 160px;
                 border-radius: 10px;
@@ -253,6 +257,7 @@
             }
 
             &-ender {
+                cursor: pointer;
                 width: 160px;
                 height: 160px;
                 border-radius: 10px;
@@ -262,6 +267,7 @@
             }
 
             &-lucky {
+                cursor: pointer;
                 width: 160px;
                 height: 160px;
                 border-radius: 10px;
@@ -294,13 +300,54 @@
     position: absolute;
     display: flex;
     align-items: center;
-    visibility: hidden;
     top: -90px;
     right: 0;
     padding: 15px 30px 15px 20px;
     background-color: $red-warning;
     box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.4);
     border-radius: 10px;
+
+    &__wrapper {
+        display: none;
+    }
+
+    &__img {
+        margin-right: 10px;
+    }
+
+    &__info {
+
+        &-title {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: $white;
+        }
+
+        &-subtitle {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: $white;
+        }
+    }
+}
+
+.success {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 315px;
+    top: -90px;
+    right: 0;
+    padding: 15px 30px 15px 20px;
+    background-color: $green-allow;
+    box-shadow: 0px 4px 15px rgba(74, 153, 36, 0.4);
+    border-radius: 10px;
+
+    &__wrapper {
+        display: none;
+    }
 
     &__img {
         margin-right: 10px;
@@ -876,7 +923,6 @@
 
 .privilege-active {
     border: 6px solid $green-allow;
-
 }
 
 .card-vip {

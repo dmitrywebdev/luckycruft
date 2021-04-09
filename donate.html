@@ -112,15 +112,31 @@
     <div class="donate">
         <div class="container">
             <div class="donate__wrapper">
-                <div class="warning">
-                    <div class="warning__img">
-                        <img src="img/warning-red.png" alt="warning" class="warning__pic">
-                    </div>
-                    <div class="warning__info">
-                        <h2 class="warning__info-title">Ошибка</h2>
-                        <span class="warning__info-subtitle">Не хватает средств на счёте</span>
+                <div class="warning__wrapper">
+                    <div class="warning">
+                        <div class="warning__img">
+                            <img src="img/warning-red.png" alt="warning" class="warning__pic">
+                        </div>
+                        <div class="warning__info">
+                            <h2 class="warning__info-title">Ошибка</h2>
+                            <span class="warning__info-subtitle">Не хватает средств на счёте</span>
+                        </div>
                     </div>
                 </div>
+                <!-- /.warning__wrapper -->
+
+                <div class="success__wrapper">
+                    <div class="success">
+                        <div class="success__img">
+                            <img src="img/succes.png" alt="success" class="success__pic">
+                        </div>
+                        <div class="success__info">
+                            <h2 class="success__info-title">Успех!</h2>
+                            <span class="success__info-subtitle">Баланс пополнен</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.success__wrapper -->
                 <div class="donate__content-wrapper">
                     <div class="buy-privilege__block">
                         <h2 class="buy-privilege__block-title">Покупка привилегии</h2>
@@ -269,7 +285,7 @@
                             <!-- /.buy-case__block-chosen-stat -->
                         </div>
                         <!-- /.buy-case__block-chosen-wrapper -->
-                        <a href="#!" class="buy-case__block-link">Есть промокод?</a>
+                        <a href="#!" class="buy-case__block-link" data-modal="#modal__promocode">Есть промокод?</a>
                         <p class="buy-case__block-notice">Привилегии предоставляются на 1 календарный месяц</p>
                         <div class="buy-bundle__block-btn-wrapper">
                             <a href="#!" class="buy-bundle__block-back">Назад</a>
@@ -1188,7 +1204,7 @@
 
                             <div class="donate__accordion-content">
                                 <div class="donate__accordion-cases">
-                                    <div class="donate__accordion-case-iron">
+                                    <div class="donate__accordion-case-iron" data-modal="#modal__case">
                                         <h2 class="donate__accordion-case-title">Железный</h2>
                                         <span class="donate__accordion-case-cost">Бесплатно</span>
                                     </div>
@@ -1393,6 +1409,117 @@
         <!-- /.footer__container -->
     </footer>
     <!-- /.footer -->
+
+    <div class="promocode modal" id="modal__promocode">
+        <div class="promocode__body">
+            <div class="promocode__content modal-content">
+                <h2 class="promocode__title">Промокод</h2>
+
+                <div class="promocode__field">
+                    <input type="text" placeholder="XXXX–XXXX–XXXX" class="promocode__input">
+
+                    <div class="promocode__incorrect-wrap">
+                        <div class="promocode__incorrect">
+                            <img src="img/wrong-img.png" alt="wrong" class="promocode__incorrect-img">
+                            <h2 class="promocode__incorrect-title">Такой промокод не существует</h2>
+                        </div>
+                        <!-- /.promocode__incorrect -->
+                    </div>
+                    <!-- /.promocode__incorrect-wrap -->
+                </div>
+                <!-- /.promocode__field -->
+                <button class="promocode__activate">Активировать</button>
+            </div>
+            <!-- /.prmocode__content -->
+        </div>
+        <!-- /.promocode__body -->
+    </div>
+    <!-- /.promocode -->
+
+    <div class="case modal" id="modal__case">
+        <div class="case__body">
+            <div class="case__content modal-content">
+                <h1 class="case__content-title">Наборы ресурсов</h1>
+                <span class="case__content-subtitle">Все комплекты с игровыми предметами разграничены, для каждого
+                    сервера предусмотрен собственный уникальный состав вещей, обратите на это внимание!</span>
+                <div class="case__accordion-cases">
+                    <a href="#tab-1" class="case__accordion-cases-link">
+                        <div class="donate__accordion-case-iron">
+                            <h2 class="donate__accordion-case-title">Железный</h2>
+                            <span class="donate__accordion-case-cost">Бесплатно</span>
+                        </div>
+                    </a>
+
+                    <a href="#tab-2" class="case__accordion-cases-link">
+                        <div class="donate__accordion-case-golden">
+                            <h2 class="donate__accordion-case-title">Золото</h2>
+                            <span class="donate__accordion-case-cost">100 ₽ / ЛК</span>
+                        </div>
+                    </a>
+
+                    <a href="#tab-3" class="case__accordion-cases-link">
+                        <div class="donate__accordion-case-almaz">
+                            <h2 class="donate__accordion-case-title">Алмаз</h2>
+                            <span class="donate__accordion-case-cost">200 ₽ / ЛК</span>
+                        </div>
+                    </a>
+
+                    <a href="#tab-4" class="case__accordion-cases-link">
+                        <div class="donate__accordion-case-platinum">
+                            <h2 class="donate__accordion-case-title">Платина</h2>
+                            <span class="donate__accordion-case-cost">350 ₽ / ЛК</span>
+                        </div>
+                    </a>
+
+                    <a href="#tab-5" class="case__accordion-cases-link">
+                        <div class="donate__accordion-case-ender">
+                            <h2 class="donate__accordion-case-title">Эндер</h2>
+                            <span class="donate__accordion-case-cost">600 ₽ / ЛК</span>
+                        </div>
+                    </a>
+
+                    <a href="#tab-6" class="case__accordion-cases-link">
+                        <div class="donate__accordion-case-lucky">
+                            <h2 class="donate__accordion-case-title">ЛакиКейс</h2>
+                            <span class="donate__accordion-case-cost">1 000 ₽ / ЛК</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- /.donate__accordion-cases -->
+                <div class="case__tab-content">
+                    <div id="tab-1" class="case__tab-content-item">
+                        <img src="img/tabs-case-content.png" alt="case" class="case__tab-content-img">
+                    </div>
+                    <!-- /.case__tab-content-item -->
+                    <div id="tab-2" class="case__tab-content-item">
+                        1
+                    </div>
+                    <!-- /.case__tab-content-item -->
+                    <div id="tab-3" class="case__tab-content-item">
+                        2
+                    </div>
+                    <!-- /.case__tab-content-item -->
+                    <div id="tab-4" class="case__tab-content-item">
+                        3
+                    </div>
+                    <!-- /.case__tab-content-item -->
+                    <div id="tab-5" class="case__tab-content-item">
+                        4
+                    </div>
+                    <!-- /.case__tab-content-item -->
+                    <div id="tab-6" class="case__tab-content-item">
+                        5
+                    </div>
+                    <!-- /.case__tab-content-item -->
+                </div>
+                <!-- /.case__tac-content -->
+            </div>
+            <!-- /.case__content -->
+        </div>
+        <!-- /.case__body -->
+    </div>
+    <!-- /.case -->
+
     <script src="https://kit.fontawesome.com/31c08b509c.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
