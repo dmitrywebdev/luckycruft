@@ -158,6 +158,8 @@
     }
 
     &__title {
+        display: block;
+        text-decoration: none;
         max-width: 443px;
         font-weight: bold;
         font-size: 20px;

@@ -69,6 +69,15 @@ input[type=number] {
   margin-bottom: 50px;
 }
 
+.page__navigation-title-last {
+  font-weight: 600;
+}
+
+.page__navigation-title-link {
+  text-decoration: none;
+  color: #2A2A34;
+}
+
 .button-likes {
   font-weight: normal;
   font-size: 12px;
@@ -843,6 +852,8 @@ input[type=number] {
 }
 
 .news__title {
+  display: block;
+  text-decoration: none;
   max-width: 443px;
   font-weight: bold;
   font-size: 20px;

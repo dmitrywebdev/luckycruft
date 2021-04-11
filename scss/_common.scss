@@ -66,6 +66,15 @@ input[type=number] {
     line-height: 22px;
     color: $main-black;
     margin-bottom: 50px;
+
+    &-last {
+        font-weight: 600;
+    }
+
+    &-link {
+        text-decoration: none;
+        color: $main-black;
+    }
 }
 
 .button-likes {
