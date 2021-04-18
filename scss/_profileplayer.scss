@@ -25,6 +25,7 @@
                 padding: 35px 0px 35px 30px;
                 display: flex;
                 align-items: center;
+                position: relative;
 
                 &-img {
                     margin-right: 30px;
@@ -66,6 +67,21 @@
                     font-size: 16px;
                     line-height: 22px;
                     color: $red-warning;
+                }
+
+                &-links {
+                    position: absolute;
+                    top: 48px;
+                    right: 33px;
+
+                    &-add {
+                        text-decoration: none;
+                        margin-right: 8px;
+                    }
+
+                    &-send {
+                        text-decoration: none;
+                    }
                 }
             }
 
@@ -177,6 +193,8 @@
                     }
 
                     &-theme {
+                        display: block;
+                        text-decoration: none;
                         font-weight: bold;
                         font-size: 16px;
                         line-height: 22px;
@@ -339,7 +357,9 @@
             margin-bottom: 30px;
 
             &-img {
+                text-align: center;
                 margin-right: 20px;
+                width: 44px;
             }
 
             &-title {
@@ -360,6 +380,7 @@
         }
 
         &-achievements {
+            cursor: pointer;
             width: 255px;
             height: 92px;
             padding: 20px 30px 20px 30px;
@@ -398,6 +419,7 @@
         }
 
         &-friends {
+            cursor: pointer;
             width: 255px;
             height: 92px;
             padding: 20px 30px 20px 30px;

@@ -524,7 +524,7 @@
     backdrop-filter: blur(3px);
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 11;
 
     &__body {
         min-height: 100%;
@@ -728,12 +728,21 @@
         justify-content: center;
     }
 
+    &__title {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: $main-black;
+        margin-bottom: 30px;
+    }
+
     &__content {
         width: 620px;
         height: 870px;
         background: $white;
         border-radius: 10px;
         padding: 30px 30px 30px 30px;
+
 
         &-form {
             position: relative;
@@ -808,6 +817,10 @@
 
         &-item {
             display: none;
+
+            &-prof {
+                display: block;
+            }
         }
     }
 
@@ -1883,6 +1896,67 @@
         right: 75px;
         z-index: 9;
     }
+}
+
+.tabs__case-content-item-active {
+    display: block;
+}
+
+.bundle {
+    display: none; 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: $main-black, $alpha: .5);
+    backdrop-filter: blur(3px);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    overflow-y: scroll;
+
+    &__body {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__content {
+        width: 1110px;
+        background: $white;
+        border-radius: 10px;
+        padding: 30px;
+
+        &-title {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 27px;
+            color: $main-black;
+            margin-bottom: 10px;
+        }
+
+        &-subtitle {
+            display: block;
+            width: 585px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: $main-black;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__tab-content-img {
+        width: 100%;
+    }
+
+    &__tab-content-item {
+        display: none;
+    }
+}
+
+.donate__accordion-bundle-link {
+    text-decoration: none;
 }
 
 .tabs__case-content-item-active {

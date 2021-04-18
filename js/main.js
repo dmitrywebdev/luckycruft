@@ -117,6 +117,21 @@ $(document).ready(function () {
 
 
 
+
+    $('.donate__accordion-bundle-link').click(function (e) {
+        e.preventDefault();
+
+        $('.donate__accordion-bundle-link').removeClass('tabs__bans-triggers-item-active');
+        $('.bundle__tab-content-item').removeClass('tabs__case-content-item-active');
+
+        $(this).addClass('tabs__bans-triggers-item-active');
+        $($(this).attr('href')).addClass('tabs__case-content-item-active');
+    });
+
+    $('.donate__accordion-bundle-link:first').click();
+
+
+
     const modalCall = $("[data-modal]");
 
     modalCall.on("click", function (event) {
