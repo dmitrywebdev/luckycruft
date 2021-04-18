@@ -20,7 +20,13 @@
     &__card {
         width: 825px;
         position: relative;
+        overflow: hidden;
+        border-radius: 10px;
         margin-bottom: 20px;
+
+        &:hover .serversall__card-pic {
+            transform: scale(1.1);
+        }
 
         &:last-child {
             margin: 0;
@@ -44,6 +50,7 @@
 
         &-pic {
             border-radius: 10px;
+            transition: transform .3s ease ;
         }
 
         &-info {

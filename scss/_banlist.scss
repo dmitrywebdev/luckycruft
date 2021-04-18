@@ -91,16 +91,22 @@
         &-header {
 
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
             padding: 35px 30px;
             background: $main-yellow;
             border-radius: 10px;
 
             &-item {
+                width: 110px;
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 22px;
+                margin-right: 54px;
                 color: $main-black;
+
+                &:last-child {
+                    margin: 0;
+                }
             }
         }
     }
@@ -167,12 +173,16 @@
     }
 }
 
-.active-sort-link::before {
-    content: '';
-    background: url(../img/svg/accept-green.svg) no-repeat left center;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 4px;
-    left: -20px;
+.active-sort-link {
+    position: relative;
+
+    &::before {
+        content: '';
+        background: url(../img/svg/accept-green.svg) no-repeat left center;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 4px;
+        left: -20px;
+    }
 }

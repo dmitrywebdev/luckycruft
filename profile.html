@@ -156,16 +156,39 @@
                         </div>
                         <!-- /.profile__top-acc-info -->
                         <div class="profile__top-acc-link-icons">
-                            <a href="#!" class="profile__top-acc-link">
+                            <a href="settings.html" class="profile__top-acc-link">
                                 <img src="img/svg/settings-ico.svg" alt="" class="profile__top-acc-ico-settings">
                             </a>
-                            <a href="#!" class="profile__top-acc-link">
+                            <a href="#!" class="profile__top-acc-link-info">
                                 <img src="img/svg/info-ico.svg" alt="" class="profile__top-acc-ico-info">
                             </a>
                         </div>
                         <!-- /.profile__top-link-icons -->
                     </div>
                     <!-- /.profile__top-acc -->
+
+                    <div class="profile__top-acc-information">
+                        <div class="profile__top-acc-information-content">
+                            <span class="profile__top-acc-information-content-registrated">Зарегистрирован: 24 февр.
+                                2021 г., 21:18</span>
+                            <span class="profile__top-acc-information-content-wasonline">Был в сети: 24 февр. 2021 г.,
+                                21:18</span>
+                            <span class="profile__top-acc-information-content-mail">Почта:
+                                <span
+                                    class="profile__top-acc-information-content-mail-content">xleezhbeagigbjdtfy@mhzayt.online</span>
+                            </span>
+                            <a href="settings.html" class="profile__top-acc-information-content-mail-change">
+                                <img src="img/svg/pen-ico.svg" alt="pen"
+                                    class="profile__top-acc-information-content-mail-change-img">
+                            </a>
+                            <a href="#!" class="profile__top-acc-information-content-back">
+                                <img src="img/svg/back-ico.svg" alt="back"
+                                    class="profile__top-acc-information-content-back-content">
+                            </a>
+                        </div>
+                        <!-- /.profile__top-acc-information-content -->
+                    </div>
+                    <!-- /.profile__top-acc-information -->
 
                     <div class="profile__top-money">
                         <h2 class="profile__top-money-title">100 000 ₽</h2>
@@ -219,7 +242,7 @@
                                     <!-- /.profile__content-status-acc-progress-bar -->
                                 </div>
                                 <!-- /.profile__content-status-acc-progress -->
-                                <a href="#!" class="profile__content-status-acc-link">Продлить</a>
+                                <a href="donate.html" class="profile__content-status-acc-link">Продлить</a>
                             </div>
                             <!-- /.profile__content-status-acc -->
 
@@ -319,7 +342,7 @@
                         <!-- /.profile__content-row-2 -->
 
                         <div class="profile__content-cards">
-                            <a href="#!" class="profile__content-card-link">
+                            <a href="market.html" class="profile__content-card-link">
                                 <div class="profile__content-card-market">
                                     <img src="img/svg/market-ico.svg" alt="market"
                                         class="profile__content-card-market-img">
@@ -336,7 +359,7 @@
                             </a>
                             <!-- /.profile__content-card-link -->
 
-                            <a href="#!" class="profile__content-information-link">
+                            <a href="rules.html" class="profile__content-information-link">
                                 <div class="profile__content-card-information">
                                     <img src="img/svg/info-white.svg" alt="info"
                                         class="profile__content-card-information-img">
@@ -345,7 +368,7 @@
                             </a>
                             <!-- /.profile__content-card-link -->
 
-                            <a href="#!" class="profile__content-headphone-link">
+                            <a href="help.html" class="profile__content-headphone-link">
                                 <div class="profile__content-card-headphone">
                                     <img src="img/svg/headphone-ico.svg" alt="info"
                                         class="profile__content-card-headphone-img">
@@ -354,7 +377,7 @@
                             </a>
                             <!-- /.profile__content-card-link -->
 
-                            <a href="#!" class="profile__content-settings-link">
+                            <a href="settings.html" class="profile__content-settings-link">
                                 <div class="profile__content-card-settings">
                                     <img src="img/svg/settings-white.svg" alt="info"
                                         class="profile__content-card-settings-img">
@@ -403,14 +426,15 @@
                                     <label class="profile__content-character-block-info-label">Скин</label>
                                     <input type="text" placeholder="Выберите файл…"
                                         class="profile__content-character-block-info-input">
-                                    <button class="profile__content-character-block-info-button">Загрузить</button>
+                                    <a href="#!" class="profile__content-character-block-info-button">Загрузить</a>
                                 </form>
 
                                 <form action="#" class="profile__content-character-block-info-form-cape">
                                     <label class="profile__content-character-block-info-label">Плащ</label>
                                     <input type="text" placeholder="Нет привилегий"
                                         class="profile__content-character-block-info-input">
-                                    <button class="profile__content-character-block-info-button-buy">Купить</button>
+                                    <a href="donate.html"
+                                        class="profile__content-character-block-info-button-buy">Купить</a>
                                 </form>
                                 <p class="profile__content-character-block-info-text">Плащ доступен от VIP и выше,
                                     либо покупается отдельно</p>
@@ -544,9 +568,18 @@
                                     <span class="friends__card-info-status status-online">Онлайн</span>
                                     <a href="#!" class="friends__card-info-msg">Написать сообщение</a>
                                 </div>
-                                <a href="#!" class="friends__card-arrow-down">
-                                    <img src="img/svg/arrow-down.svg" alt="arrow-down" class="friends__arrow-down">
-                                </a>
+                                <ul class="friends__card-arrow-down-wrap">
+                                    <li class="friends__card-arrow-down-list">
+                                        <img src="img/svg/arrow-down.svg" alt="arrow-down" class="friends__arrow-down">
+                                        <ul class="friends__card-arrow-down-sublist">
+                                            <li class="friends__card-arrow-down-subitem">
+                                                <a href="#!" class="friends__card-delete">Удалить из друзей</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- /.friends__card-arrow-down-list -->
+                                </ul>
+                                <!-- /.friends__card-arrow-down-wrap -->
                             </div>
                             <!-- /.friends__card -->
 
@@ -559,9 +592,18 @@
                                     <span class="friends__card-info-status status-online">Онлайн</span>
                                     <a href="#!" class="friends__card-info-msg">Написать сообщение</a>
                                 </div>
-                                <a href="#!" class="friends__card-arrow-down">
-                                    <img src="img/svg/arrow-down.svg" alt="arrow-down" class="friends__arrow-down">
-                                </a>
+                                <ul class="friends__card-arrow-down-wrap">
+                                    <li class="friends__card-arrow-down-list">
+                                        <img src="img/svg/arrow-down.svg" alt="arrow-down" class="friends__arrow-down">
+                                        <ul class="friends__card-arrow-down-sublist">
+                                            <li class="friends__card-arrow-down-subitem">
+                                                <a href="#!" class="friends__card-delete">Удалить из друзей</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- /.friends__card-arrow-down-list -->
+                                </ul>
+                                <!-- /.friends__card-arrow-down-wrap -->
                             </div>
                             <!-- /.friends__card -->
 
@@ -574,9 +616,18 @@
                                     <span class="friends__card-info-status">Был в сети 10 минут назад</span>
                                     <a href="#!" class="friends__card-info-msg">Написать сообщение</a>
                                 </div>
-                                <a href="#!" class="friends__card-arrow-down">
-                                    <img src="img/svg/arrow-down.svg" alt="arrow-down" class="friends__arrow-down">
-                                </a>
+                                <ul class="friends__card-arrow-down-wrap">
+                                    <li class="friends__card-arrow-down-list">
+                                        <img src="img/svg/arrow-down.svg" alt="arrow-down" class="friends__arrow-down">
+                                        <ul class="friends__card-arrow-down-sublist">
+                                            <li class="friends__card-arrow-down-subitem">
+                                                <a href="#!" class="friends__card-delete">Удалить из друзей</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- /.friends__card-arrow-down-list -->
+                                </ul>
+                                <!-- /.friends__card-arrow-down-wrap -->
                             </div>
                             <!-- /.friends__card -->
                             <div class="friends__card">
@@ -588,9 +639,18 @@
                                     <span class="friends__card-info-status">Был в сети 10 минут назад</span>
                                     <a href="#!" class="friends__card-info-msg">Написать сообщение</a>
                                 </div>
-                                <a href="#!" class="friends__card-arrow-down">
-                                    <img src="img/svg/arrow-down.svg" alt="arrow-down" class="friends__arrow-down">
-                                </a>
+                                <ul class="friends__card-arrow-down-wrap">
+                                    <li class="friends__card-arrow-down-list">
+                                        <img src="img/svg/arrow-down.svg" alt="arrow-down" class="friends__arrow-down">
+                                        <ul class="friends__card-arrow-down-sublist">
+                                            <li class="friends__card-arrow-down-subitem">
+                                                <a href="#!" class="friends__card-delete">Удалить из друзей</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- /.friends__card-arrow-down-list -->
+                                </ul>
+                                <!-- /.friends__card-arrow-down-wrap -->
                             </div>
                             <!-- /.friends__card -->
 
@@ -603,9 +663,18 @@
                                     <span class="friends__card-info-status">Был в сети 10 минут назад</span>
                                     <a href="#!" class="friends__card-info-msg">Написать сообщение</a>
                                 </div>
-                                <a href="#!" class="friends__card-arrow-down">
-                                    <img src="img/svg/arrow-down.svg" alt="arrow-down" class="friends__arrow-down">
-                                </a>
+                                <ul class="friends__card-arrow-down-wrap">
+                                    <li class="friends__card-arrow-down-list">
+                                        <img src="img/svg/arrow-down.svg" alt="arrow-down" class="friends__arrow-down">
+                                        <ul class="friends__card-arrow-down-sublist">
+                                            <li class="friends__card-arrow-down-subitem">
+                                                <a href="#!" class="friends__card-delete">Удалить из друзей</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- /.friends__card-arrow-down-list -->
+                                </ul>
+                                <!-- /.friends__card-arrow-down-wrap -->
                             </div>
                             <!-- /.friends__card -->
 
@@ -881,20 +950,20 @@
                     <!-- /.replenish__content-card -->
 
                     <div class="replenish__content-card card-premium">
-                        <h2 class="replenish__content-card-price">500 ₽</h2>
-                        <span class="replenish__content-card-bonus">+50 ₽<br> бонусом</span>
+                        <h2 class="replenish__content-card-price">1 000 ₽</h2>
+                        <span class="replenish__content-card-bonus">+150 ₽<br> бонусом</span>
                     </div>
                     <!-- /.replenish__content-card -->
 
                     <div class="replenish__content-card card-deluxe">
-                        <h2 class="replenish__content-card-price">500 ₽</h2>
-                        <span class="replenish__content-card-bonus">+50 ₽<br> бонусом</span>
+                        <h2 class="replenish__content-card-price">3 000 ₽</h2>
+                        <span class="replenish__content-card-bonus">+750 ₽<br> бонусом</span>
                     </div>
                     <!-- /.replenish__content-card -->
 
                     <div class="replenish__content-card card-legend">
-                        <h2 class="replenish__content-card-price">500 ₽</h2>
-                        <span class="replenish__content-card-bonus">+50 ₽<br> бонусом</span>
+                        <h2 class="replenish__content-card-price">5 000 ₽</h2>
+                        <span class="replenish__content-card-bonus">+1 500 ₽<br> бонусом</span>
                     </div>
                     <!-- /.replenish__content-card -->
                 </div>
@@ -907,7 +976,7 @@
                 <!-- /.replenish__content-form -->
                 <div class="replenish__content-select-wrap">
                     <select class="replenish__content-select">
-                        <option disabled>Выберите способ оплаты</option>
+                        <option value="Выберите способ оплаты">Выберите способ оплаты</option>
                         <option value="Банковские карты, криптовалюты" class="replenish__content-option">Банковские
                             карты,
                             криптовалюты</option>
@@ -935,7 +1004,7 @@
                 <form action="#" class="convert__content-form">
                     <div class="convert__content-group">
                         <label class="convert__content-label">Отдаю:</label>
-                        <input type="number" value="100" class="convert__content-input">
+                        <input id="convert-rub" type="number" value="100" class="convert__content-input">
                     </div>
                     <!-- /.convert__content-group -->
 
@@ -945,7 +1014,7 @@
 
                     <div class="convert__content-group">
                         <label class="convert__content-label">Получаю:</label>
-                        <input disabled type="text" value="100 ЛК" class="convert__content-input">
+                        <input id="convert-lucky" disabled type="text" value="100 ЛК" class="convert__content-input">
                     </div>
                     <!-- /.convert__content-group -->
                 </form>
@@ -974,7 +1043,7 @@
                     </select>
                 </div>
                 <!-- /.stuck__content-select-wrap -->
-                <button class="stuck__content-btn">Конвертировать</button>
+                <button class="stuck__content-btn">На спавн!</button>
             </div>
             <!-- /.stuck__content -->
         </div>
@@ -1008,9 +1077,9 @@
                                 <div class="bans__tab-1-content-card-info">
                                     <h2 class="bans__tab-1-content-card-reason">Причина бана:</h2>
                                     <p class="bans__tab-1-content-card-desc">Неподобающее поведение, нарушение правил:
-                                        <a href="#!" class="bans__tab-1-content-card-link">2.1,</a>
-                                        <a href="#!" class="bans__tab-1-content-card-link">2.7,</a>
-                                        <a href="#!" class="bans__tab-1-content-card-link">9.1</a>
+                                        <a href="rules.html" class="bans__tab-1-content-card-link">2.1,</a>
+                                        <a href="rules.html" class="bans__tab-1-content-card-link">2.7,</a>
+                                        <a href="rules.html" class="bans__tab-1-content-card-link">9.1</a>
                                     </p>
                                     <button disabled
                                         class="bans__tab-1-content-card-btn btn-inactive">Невозможно</button>
@@ -1034,11 +1103,11 @@
                                 <div class="bans__tab-1-content-card-info">
                                     <h2 class="bans__tab-1-content-card-reason">Причина бана:</h2>
                                     <p class="bans__tab-1-content-card-desc">Неподобающее поведение, нарушение правил:
-                                        <a href="#!" class="bans__tab-1-content-card-link">2.1,</a>
-                                        <a href="#!" class="bans__tab-1-content-card-link">2.7,</a>
-                                        <a href="#!" class="bans__tab-1-content-card-link">9.1</a>
+                                        <a href="rules.html" class="bans__tab-1-content-card-link">2.1,</a>
+                                        <a href="rules.html" class="bans__tab-1-content-card-link">2.7,</a>
+                                        <a href="rules.html" class="bans__tab-1-content-card-link">9.1</a>
                                     </p>
-                                    <button disabled class="bans__tab-1-content-card-btn">Платный разбан 500 ₽</button>
+                                    <button class="bans__tab-1-content-card-btn">Платный разбан 500 ₽</button>
                                 </div>
                                 <!-- /.bans__tab-1-content-card-info -->
                             </div>
@@ -1063,10 +1132,10 @@
                                 <div class="bans__tab-2-content-card-info">
                                     <h2 class="bans__tab-2-content-card-reason">Причина бана:</h2>
                                     <p class="bans__tab-2-content-card-desc">Неподобающее поведение, нарушение правил:
-                                        <a href="#!" class="bans__tab-2-content-card-link">2.1,</a>
-                                        <a href="#!" class="bans__tab-2-content-card-link">2.7</a>
+                                        <a href="rules.html" class="bans__tab-2-content-card-link">2.1,</a>
+                                        <a href="rules.html" class="bans__tab-2-content-card-link">2.7</a>
                                     </p>
-                                    <button disabled class="bans__tab-2-content-card-btn">Платный разбан 500 ₽</button>
+                                    <button class="bans__tab-2-content-card-btn">Платный разбан 500 ₽</button>
                                 </div>
                                 <!-- /.bans__tab-2-content-card-info -->
                             </div>

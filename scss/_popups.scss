@@ -556,8 +556,8 @@
     }
 
     &__input {
-        width: 142px;
-        padding: 9px 5px 9px 10px;
+        width: 170px;
+        padding: 9px 10px;
         line-height: 20px;
         background: $light-blue;
         border: 1px solid $divide-grey;
@@ -572,7 +572,7 @@
     }
 
     &__incorrect {
-        width: 388px;
+        width: 365px;
         display: flex;
         align-items: center;
         padding: 8px 0px 8px 30px;
@@ -601,16 +601,16 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 22px;
-        color: $main-black;
+        color: $white;
         padding: 15px 0;
-        background-color: $main-yellow;
+        background-color: $green-allow;
         border: 0;
-        box-shadow: 0px 2px 0px #DCC438;
+        box-shadow: 0px 2px 0px #3E8A1A;
         border-radius: 10px;
         transition: background-color .3s ease;
 
         &:hover {
-            background-color: $yellow-hover;
+            background-color: $light-green;
         }
     }
 }
@@ -878,11 +878,54 @@
             }
         }
 
-        &-arrow-down {
-            position: absolute;
-            top: 13px;
-            right: 4px;
+        &-arrow-down {  
+            display: block;
+            text-decoration: none;
+            padding-left: 100px;
+            padding-bottom: 50px;
+            
+
+            &-list {
+                cursor: pointer;
+                padding-bottom: 20px;
+            }
+
+            &-sublist {
+                display: none;
+            }
+
+
+            &-wrap {
+                position: absolute;
+                top: 13px;
+                right: 4px;
+
+                li:hover .friends__card-arrow-down-sublist {
+                    display: block;
+                }
+            }
         }
+
+        &-delete {
+            width: 175px;
+            padding: 10px 15px;
+            background: $white;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: $main-black;
+            box-shadow: 0px 4px 15px rgba(166, 166, 166, 0.4);
+            border-radius: 10px;
+            position: absolute;
+            top: 19px;
+            right: -8px;
+            z-index: 7;
+        }
+    }
+
+    &-arrow-down {
+        position: relative;
     }
 
     &__orders {

@@ -6,6 +6,19 @@ $(document).ready(function () {
         $('html').animate({ scrollTop: 0 }, 1000);
     })
 
+    $('.news__sort-item').click(function () {
+
+        $('.news__sort-item').removeClass('sort-item-active');
+        $(this).addClass('sort-item-active');
+    });
+
+    $('.banlist__sort-item').click(function () {
+
+        $('.banlist__sort-item').removeClass('active-sort-link');
+        $(this).addClass('active-sort-link');
+    });
+
+
     $('.buy-privilege__block-card').click(function (event) {
         const parent = $(this);
 
@@ -130,6 +143,16 @@ $(document).ready(function () {
 
     let input = $('.buy__content-count-input');
 
+    $('a.scrollto').click(function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top + "px"
+        }, {
+            duration: 1500,
+            easing: "swing"
+        });
+        return false;
+    });
+
     input.val();
 
     $('.buy__content-count-counter').click(function () {
@@ -137,6 +160,22 @@ $(document).ready(function () {
             input.val(parseInt(input.val()) - 1);
         else if (input.val() >= 1)
             input.val(parseInt(input.val()) + 1);
+    });
+
+    $('.profile__top-acc-link-info').click(function (event) {
+        event.preventDefault();
+
+        $('.profile__top-acc-information').fadeIn();
+    });
+
+    $('.profile__top-acc-information-content-back').click(function (event) {
+        event.preventDefault();
+
+        $('.profile__top-acc-information').fadeOut();
+    });
+
+    $('#convert-rub').on('change', function () {
+        $('#convert-lucky').val($('#convert-rub').val() + " ЛК");
     })
 
     $('.donate__accordion-cases').slick({
