@@ -69,6 +69,8 @@
     }
 
     &__button-send {
+        display: block;
+        text-decoration: none;
         border: none;
         font-weight: 600;
     }

@@ -1989,6 +1989,8 @@ input[type=number] {
 }
 
 .theme__button-send {
+  display: block;
+  text-decoration: none;
   border: none;
   font-weight: 600;
 }
@@ -2698,6 +2700,7 @@ input[type=number] {
 }
 
 .serversall__card {
+  cursor: pointer;
   width: 825px;
   position: relative;
   overflow: hidden;
@@ -7503,6 +7506,7 @@ input[type="color" i]::-webkit-color-swatch-wrapper {
 }
 
 .registration__checkbox-label {
+  cursor: pointer;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;

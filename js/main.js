@@ -156,7 +156,7 @@ $(document).ready(function () {
     });
 
 
-    let input = $('.buy__content-count-input');
+
 
     $('a.scrollto').click(function () {
         $('html, body').animate({
@@ -168,13 +168,14 @@ $(document).ready(function () {
         return false;
     });
 
+    let input = $('.buy__content-count-input');
     input.val();
 
     $('.buy__content-count-counter').click(function () {
         if ($(this).hasClass('minus'))
-            input.val(parseInt(input.val()) - 1);
-        else if (input.val() >= 1)
-            input.val(parseInt(input.val()) + 1);
+            input.val(parseInt(input.val()) - 16);
+        else if (input.val() >= 0)
+            input.val(parseInt(input.val()) + 16);
     });
 
     $('.profile__top-acc-link-info').click(function (event) {
