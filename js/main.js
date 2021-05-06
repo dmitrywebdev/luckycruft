@@ -30,13 +30,13 @@ $(document).ready(function () {
         }
     });
 
-    $('.buy-bundle__block-server-info').click(function (event) {
+    $('.buy-privilege__servers-block-server-info').click(function (event) {
         const parent = $(this);
 
         if (parent.hasClass('privilege-active')) {
             parent.removeClass('privilege-active');
         } else {
-            $('.buy-bundle__block-server-info').removeClass('privilege-active')
+            $('.buy-privilege__servers-block-server-info').removeClass('privilege-active')
             parent.addClass('privilege-active');
         }
     });
@@ -51,6 +51,52 @@ $(document).ready(function () {
             parent.addClass('replenish-active');
         }
     });
+
+
+    $('.buy-bundle__servers-block-server-info').click(function (event) {
+        const parent = $(this);
+
+        if (parent.hasClass('privilege-active')) {
+            parent.removeClass('privilege-active');
+        } else {
+            $('.buy-bundle__servers-block-server-info').removeClass('privilege-active')
+            parent.addClass('privilege-active');
+        }
+    });
+
+    $('.buy-bundle__block-card').click(function (event) {
+        const parent = $(this);
+
+        if (parent.hasClass('privilege-active')) {
+            parent.removeClass('privilege-active');
+        } else {
+            $('.buy-bundle__block-card').removeClass('privilege-active')
+            parent.addClass('privilege-active');
+        }
+    });
+
+    $('.buy-case__block-case').click(function (event) {
+        const parent = $(this);
+
+        if (parent.hasClass('privilege-active')) {
+            parent.removeClass('privilege-active');
+        } else {
+            $('.buy-case__block-case').removeClass('privilege-active')
+            parent.addClass('privilege-active');
+        }
+    });
+
+    $('.buy-case__servers-block-server-info').click(function (event) {
+        const parent = $(this);
+
+        if (parent.hasClass('privilege-active')) {
+            parent.removeClass('privilege-active');
+        } else {
+            $('.buy-case__servers-block-server-info').removeClass('privilege-active')
+            parent.addClass('privilege-active');
+        }
+    });
+
 
     $('.rules__accordion-title').click(function (event) {
         $(this).toggleClass('accordion-active').next().slideToggle(600);
@@ -131,6 +177,53 @@ $(document).ready(function () {
     $('.donate__accordion-bundle-link:first').click();
 
 
+    $('.buy-privilege__block-card').click(function () {
+        if ($(this).hasClass('privilege-active')) {
+            $('.buy-privilege__block-more').attr('disabled', false);
+        } else {
+            $('.buy-privilege__block-more').attr('disabled', true);
+        }
+    });
+
+    $('.buy-privilege__servers-block-server-info').click(function () {
+        if ($(this).hasClass('privilege-active')) {
+            $('.buy-privilege__servers-block-next').attr('disabled', false);
+        } else {
+            $('.buy-privilege__servers-block-next').attr('disabled', true);
+        }
+    });
+
+    $('.buy-bundle__block-card').click(function () {
+        if ($(this).hasClass('privilege-active')) {
+            $('.buy-bundle__block-next').attr('disabled', false);
+        } else {
+            $('.buy-bundle__block-next').attr('disabled', true);
+        }
+    });
+
+    $('.buy-bundle__servers-block-server-info').click(function () {
+        if ($(this).hasClass('privilege-active')) {
+            $('.buy-bundle__servers-block-next').attr('disabled', false);
+        } else {
+            $('.buy-bundle__servers-block-next').attr('disabled', true);
+        }
+    });
+
+    $('.buy-case__servers-block-server-info').click(function () {
+        if ($(this).hasClass('privilege-active')) {
+            $('.buy-case__servers-block-next').attr('disabled', false);
+        } else {
+            $('.buy-case__servers-block-next').attr('disabled', true);
+        }
+    });
+
+    $('.buy-case__block-case').click(function () {
+        if ($(this).hasClass('privilege-active')) {
+            $('.buy-case__block-next').attr('disabled', false);
+        } else {
+            $('.buy-case__block-next').attr('disabled', true);
+        }
+    });
 
     const modalCall = $("[data-modal]");
 
@@ -194,6 +287,165 @@ $(document).ready(function () {
         $('#convert-lucky').val($('#convert-rub').val() + " ЛК");
     })
 
+
+    //////////////////////////////////////////////////////////////////////////////////////
+    let privNextFirst = $('.buy-privilege__block-more');
+    let privNextSecond = $('.buy-privilege__servers-block-next');
+    let privBackfirst = $('.buy-privilege__servers-block-back');
+    let privBackSecond = $('.buy-privilege__result-block-back')
+
+    privNextFirst.click(function (e) {
+        e.preventDefault();
+
+        $('#buy-privilege__block').fadeOut(0);
+
+        $('#buy-privilege__servers').fadeIn();
+
+    });
+
+    privNextSecond.click(function (e) {
+        e.preventDefault();
+
+        $('#buy-privilege__servers').fadeOut(0);
+        $('#buy-privilege__result').fadeIn();
+    });
+
+    privBackfirst.click(function (e) {
+        e.preventDefault();
+
+        $('#buy-privilege__servers').fadeOut(0);
+
+        $('#buy-privilege__block').fadeIn();
+    });
+
+    privBackSecond.click(function (e) {
+        e.preventDefault();
+
+        $('#buy-privilege__result').fadeOut(0);
+
+        $('#buy-privilege__servers').fadeIn();
+    });
+
+    /////////////////////////////////////////////////////////////////////////////////////////
+
+    let bundleNextFirst = $('.buy-bundle__block-next');
+    let bundleNextSecond = $('.buy-bundle__servers-block-next');
+    let bundleBackfirst = $('.buy-bundle__servers-block-back');
+    let bundleBackSecond = $('.buy-bundle__result-block-back')
+
+
+    bundleNextFirst.click(function (e) {
+        e.preventDefault();
+
+        $('#buy-bundle__block').fadeOut(0);
+
+        $('#buy-bundle__servers').fadeIn();
+
+    });
+
+    bundleNextSecond.click(function (e) {
+        e.preventDefault();
+
+        $('#buy-bundle__servers').fadeOut(0);
+        $('#buy-bundle__result').fadeIn();
+    });
+
+    bundleBackfirst.click(function (e) {
+        e.preventDefault();
+
+        $('#buy-bundle__servers').fadeOut(0);
+
+        $('#buy-bundle__block').fadeIn();
+    });
+
+    bundleBackSecond.click(function (e) {
+        e.preventDefault();
+
+        $('#buy-bundle__result').fadeOut(0);
+
+        $('#buy-bundle__servers').fadeIn();
+    });
+
+    /////////////////////////////////////////////////////////////////////////////
+
+    let caseNextFirst = $('.buy-case__block-next');
+    let caseNextSecond = $('.buy-case__servers-block-next');
+    let caseBackfirst = $('.buy-case__servers-block-back');
+    let caseBackSecond = $('.buy-case__result-block-back')
+
+
+    caseNextFirst.click(function (e) {
+        e.preventDefault();
+
+        $('#buy-case__block').fadeOut(0);
+
+        $('#buy-case__servers').fadeIn();
+
+    });
+
+    caseNextSecond.click(function (e) {
+        e.preventDefault();
+
+        $('#buy-case__servers').fadeOut(0);
+        $('#buy-case__result').fadeIn();
+    });
+
+    caseBackfirst.click(function (e) {
+        e.preventDefault();
+
+        $('#buy-case__servers').fadeOut(0);
+
+        $('#buy-case__block').fadeIn();
+    });
+
+    caseBackSecond.click(function (e) {
+        e.preventDefault();
+
+        $('#buy-case__result').fadeOut(0);
+
+        $('#buy-case__servers').fadeIn();
+    });
+
+    /////////////////////////////////////////////////////////////////////////////
+
+    $('.buy-privilege__result-block-chosen-toggle-checkbox').click(function () {
+
+        if ($(this).is(':checked')) {
+            $('.buy-privilege__result-currency').text("ЛК");
+        } else {
+            $('.buy-privilege__result-currency').text("₽");
+        }
+    });
+
+    $('.buy-bundle__result-block-chosen-toggle-checkbox').click(function () {
+
+        if ($(this).is(':checked')) {
+            $('.buy-bundle__result-currency').text("ЛК");
+        } else {
+            $('.buy-bundle__result-currency').text("₽");
+        }
+    });
+
+    $('.buy-case__result-block-chosen-toggle-checkbox').click(function () {
+
+        if ($(this).is(':checked')) {
+            $('.buy-case__result-currency').text("ЛК");
+        } else {
+            $('.buy-case__result-currency').text("₽");
+        }
+    });
+
+    $('.profile__top-money-toggle-checkbox').click(function () {
+
+        if ($(this).is(':checked')) {
+            $('.profile__top-money-currency').text("ЛК");
+        } else {
+            $('.profile__top-money-currency').text("₽");
+        }
+    });
+
+
+
     $('.donate__accordion-cases').slick({
         arrows: true,
         slidesToShow: 4,
@@ -210,6 +462,14 @@ $(document).ready(function () {
         variableWidth: true,
     });
 
+
+    $('.buy-case__block-cases').slick({
+        arrows: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: false,
+        variableWidth: true,
+    });
 });
 
 
