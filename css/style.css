@@ -5856,6 +5856,21 @@ input[type=number] {
   background-color: #FFEE8D;
 }
 
+.market-item-active {
+  position: relative;
+}
+
+.market-item-active::before {
+  display: block;
+  content: '';
+  width: 14px;
+  height: 11px;
+  background: url(../img/svg/accept-green.svg) no-repeat left center;
+  position: absolute;
+  top: 7px;
+  left: -25px;
+}
+
 .profile__title {
   font-weight: bold;
   font-size: 20px;

@@ -264,3 +264,19 @@
 
 }
 
+
+.market-item-active {
+    position: relative;
+
+    &::before {
+        display: block;
+        content: '';
+        width: 14px;
+        height: 11px;
+        background: url(../img/svg/accept-green.svg) no-repeat left center;
+        position: absolute;
+        top: 7px;
+        left: -25px;
+        
+    }
+}

@@ -18,6 +18,12 @@ $(document).ready(function () {
         $(this).addClass('active-sort-link');
     });
 
+    $('.market__sort-link').click(function () {
+
+        $('.market__sort-link').removeClass('market-item-active');
+        $(this).addClass('market-item-active');
+    });
+
 
     $('.buy-privilege__block-card').click(function (event) {
         const parent = $(this);
